@@ -34,33 +34,24 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b87-O6-DdJ">
+                                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleToFill" image="delete.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-ON-SLg">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="76" id="2rM-Kv-tTj"/>
-                                                <constraint firstAttribute="height" constant="65" id="4jL-XE-En1"/>
+                                                <constraint firstAttribute="width" constant="50" id="L9v-6y-gIk"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                            <state key="normal" title="Button" image="delete.png">
-                                                <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                            <state key="highlighted">
-                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                            </state>
-                                        </button>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="FrA-kP-CiQ"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="WbT-Du-tUK"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="QjS-Iu-bdE" secondAttribute="leading" type="default" id="CSc-Lc-CF2"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="QjS-Iu-bdE" secondAttribute="trailing" type="default" id="CYk-Eh-sat"/>
+                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" constant="6" id="DL3-aG-WUR"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="DSr-Ua-goU"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="GSO-Dg-pcR"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="bottom" secondItem="fl9-y7-ncD" secondAttribute="bottom" type="default" id="NQT-aG-dIz"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="Ydw-cz-cP5"/>
+                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="centerX" secondItem="BLR-2l-5oP" secondAttribute="centerX" type="default" id="eV8-jN-OsI"/>
                                     <constraint firstItem="QjS-Iu-bdE" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" constant="49" id="gTu-w8-og2"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="jHB-PU-pNB"/>
-                                    <constraint firstItem="b87-O6-DdJ" firstAttribute="centerY" secondItem="BLR-2l-5oP" secondAttribute="centerY" type="default" id="jlo-gh-Xbl"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="r3f-hU-nr3"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="rQ0-oF-hgf"/>
-                                    <constraint firstItem="b87-O6-DdJ" firstAttribute="centerX" secondItem="QjS-Iu-bdE" secondAttribute="centerX" type="default" id="sO3-Pa-IeW"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="bottom" secondItem="fl9-y7-ncD" secondAttribute="bottom" type="default" id="zap-eV-aK7"/>
                                 </constraints>
                             </collectionViewCell>
                         </cells>
@@ -78,29 +69,6 @@
     <resources>
         <image name="delete.png" width="64" height="64"/>
     </resources>
-    <classes>
-        <class className="MyFavoriteViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyFavoriteViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UICollectionReusableView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
-        </class>
-        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
-        </class>
-        <class className="UICollectionViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
-        </class>
-        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

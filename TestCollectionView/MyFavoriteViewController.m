@@ -8,6 +8,10 @@
 
 #import "MyFavoriteViewController.h"
 #import <AddressBookUI/AddressBookUI.h>
+#import "BlocksKit.h"
+#import "UIColor+Colours.h"
+
+
 
 @interface People : NSObject
 @property (nonatomic,strong) NSString *name;
@@ -47,27 +51,14 @@
     [self.collectionView reloadData];
     self.editing = NO;
     
-    UILongPressGestureRecognizer *editGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(startEdit)];
-    UITapGestureRecognizer *tapToStop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopEdit)];
-    tapToStop.delegate = self;
-    
-    [self.view addGestureRecognizer:editGesture];
-    [self.view addGestureRecognizer:tapToStop];
+//    UILongPressGestureRecognizer *editGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(startEdit)];
+//    UITapGestureRecognizer *tapToStop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopEdit)];
+//    tapToStop.delegate = self;
+//    
+//    [self.view addGestureRecognizer:editGesture];
+//    [self.view addGestureRecognizer:tapToStop];
 }
 
-- (void)startEdit{
-    self.editing = YES;
-    [self.collectionView reloadData];
-}
-
-- (void)stopEdit{
-    self.editing = NO;
-    [self.collectionView reloadData];
-}
-
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
-    return self.editing;
-}
 
 - (void)didReceiveMemoryWarning
 {
@@ -76,7 +67,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return friends.count + 1;
+    return friends.count + 2;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
@@ -84,24 +75,35 @@
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPat];
     cell.backgroundColor = [UIColor whiteColor];
     
-    UIButton *delBtn = (UIButton*)[cell viewWithTag:102];
+    UIImageView *delBtn = (UIImageView*)[cell viewWithTag:102];
     delBtn.hidden = YES;
     delBtn.alpha = 0.;
-    [delBtn addTarget:self action:@selector(onDelete:) forControlEvents:UIControlEventTouchUpInside];
-    
     
     if (indexPat.row == friends.count) {
         //the last one
-        cell.backgroundColor = [UIColor redColor];
-    }else{
+        cell.backgroundColor = [UIColor skyeBlueColor];
+        [((UILabel*)[cell viewWithTag:101]) setText:@"ADD"];
+        [((UILabel*)[cell viewWithTag:101]) setTextAlignment:NSTextAlignmentCenter];
+        [((UILabel*)[cell viewWithTag:101]) setTextColor:[UIColor whiteColor]];
+        [((UILabel*)[cell viewWithTag:101]) setFont:[UIFont fontWithName:@"Symbol" size:22. ]];
+        UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
+        imgView.image = nil;
+        
+    }else if(indexPat.row == (friends.count+1) ){
+        cell.backgroundColor = [UIColor lightCreamColor];
+        [((UILabel*)[cell viewWithTag:101]) setText:@"EDIT"];
+        [((UILabel*)[cell viewWithTag:101]) setTextAlignment:NSTextAlignmentCenter];
+        [((UILabel*)[cell viewWithTag:101]) setTextColor:[UIColor whiteColor]];
+        [((UILabel*)[cell viewWithTag:101]) setFont:[UIFont fontWithName:@"Symbol" size:22. ]];
+        
+
+    }else if (indexPat.row < friends.count ){
         
         UILabel *nameLabel = (UILabel*)[cell viewWithTag:101];
         nameLabel.text = ((People*)[friends objectAtIndex:indexPat.row]).name;
         UIImage* img = ((People*)[friends objectAtIndex:indexPat.row]).faceImage;
-        if (img) {
-            UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
-            imgView.image = img;
-        }
+        UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
+        imgView.image = img;
         
         if (self.editing) {
             cell.backgroundColor = [UIColor blueColor];
@@ -114,45 +116,93 @@
             [UIView animateWithDuration:.3 animations:^{
                 delBtn.alpha = 0.;
             }];
-
+            
         }
+
     }
-    
     
     return cell;
 }
 
-- (void)onDelete:(id)sender{
-    
+- (void)startEdit{
+    self.editing = YES;
+    [self.collectionView reloadData];
+}
+
+- (void)stopEdit{
+    self.editing = NO;
+    [self.collectionView reloadData];
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
-    ABAddressBookRef addressBook = ABAddressBookCreate();
-    __block BOOL accessGranted = NO;
-    if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
-        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
-        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
-            accessGranted = granted;
-            dispatch_semaphore_signal(sema);
-        });
-        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
-        //dispatch_release(sema);
-    }
-    else { // we're on iOS 5 or older
-        accessGranted = YES;
-    }
-    
-    if (accessGranted) {
-        // Do whatever you want here.
+    if (self.editing) {
+        if (indexPath.row < friends.count) {
+            if (friends) {
+                NSLog(@"remove one ");
+                [friends removeObjectAtIndex:indexPath.row];
+                [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
+                [self.collectionView reloadData];
+                if (friends.count == 0 ) {
+                    [self stopEdit];
+                }
+                return;
+            }
+        }else if (indexPath.row == friends.count){
+            return;
+        }else if (indexPath.row == (friends.count+1) ){
+            [self stopEdit];
+            return;
+        }
+
+    }else{
         
-        ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
-        picker.peoplePickerDelegate = self;
+        if (indexPath.row < friends.count) {
+
+            NSString *phone = [NSString stringWithFormat:@"telprompt://%@", ((People*)[friends objectAtIndex:indexPath.row]).phone];
+            NSLog(@"called %@", phone);
+
+            if (phone) {
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phone]];
+            }else{
+                //TODO:
+                NSLog(@"no phone");
+            }
         
-        [self presentViewController:picker animated:YES completion:^{
+
+        }else if (indexPath.row == friends.count){
+            ABAddressBookRef addressBook = ABAddressBookCreate();
+            __block BOOL accessGranted = NO;
+            if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
+                dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+                ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
+                    accessGranted = granted;
+                    dispatch_semaphore_signal(sema);
+                });
+                dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+                //dispatch_release(sema);
+            }
+            else { // we're on iOS 5 or older
+                accessGranted = YES;
+            }
             
-        }];
+            if (accessGranted) {
+                // Do whatever you want here.
+                
+                ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
+                picker.peoplePickerDelegate = self;
+                
+                [self presentViewController:picker animated:YES completion:^{
+                    
+                }];
+            }
+
+        }else if (indexPath.row == (friends.count+1) ){
+            [self startEdit];
+        }
+
     }
+        
 
 }
 
@@ -174,9 +224,31 @@
 
     NSString *name = (__bridge NSString*)ABRecordCopyCompositeName(person);
     //获取联系人电话
-    ABMutableMultiValueRef phoneMulti = ABRecordCopyValue(person, kABPersonPhoneProperty);
-    NSString *aPhone = (__bridge NSString*)ABMultiValueCopyValueAtIndex(phoneMulti, 0);
+    NSMutableArray *arPhList = [[NSMutableArray alloc] init];
+    ABMultiValueRef phones = ABRecordCopyValue(person, kABPersonPhoneProperty);
+    for(CFIndex j = 0; j < ABMultiValueGetCount(phones); j++)
+    {
+        CFStringRef phoneNumberRef = ABMultiValueCopyValueAtIndex(phones, j);
+        NSString *phoneLabel =(__bridge NSString*) ABAddressBookCopyLocalizedLabel(ABMultiValueCopyLabelAtIndex(phones, j));
+        NSString *phoneNumber = (__bridge NSString *)phoneNumberRef;
+                
+        // nifty  trick to remove all other characters in a phone #
+        // remember 3015271111 can be stored in many ways using +, (, ), . etc characters.
+        // we want to eliminate all characters that are not digits and them compare
+        
+        NSCharacterSet* nonDigits = [[NSCharacterSet decimalDigitCharacterSet] invertedSet]; // all characters that are not digits
+        NSString *strippedPhone = [[phoneNumber componentsSeparatedByCharactersInSet: nonDigits] componentsJoinedByString: @""]; // take them off
+                
+        NSDictionary *dicTemp = [[NSDictionary alloc]initWithObjectsAndKeys:strippedPhone,@"value", phoneLabel,@"label", nil];
+        [arPhList addObject:dicTemp];
+    }
+    
+    NSString *aPhone = @"0";
+    if (arPhList.count > 0 ) {
+        aPhone = [[arPhList objectAtIndex:0] objectForKey:@"value"];
 
+    }
+    
     newFriend.name = name;
     newFriend.phone = aPhone;
     
