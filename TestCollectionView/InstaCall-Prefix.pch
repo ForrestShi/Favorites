@@ -1,3 +1,4 @@
+
 //
 // Prefix header for all source files of the 'TestCollectionView' target in the 'TestCollectionView' project
 //
@@ -12,3 +13,9 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+#import "UIColor+Colours.h"
+#import "UINavigationBar+FlatUI.h"
+#import "UIColor+FlatUI.h"
+#import "UIBarButtonItem+FlatUI.h"
+#import "UIFont+FlatUI.h"

@@ -7,12 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "UINavigationBar+FlatUI.h"
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [UIBarButtonItem configureFlatButtonsWithColor:[UIColor peterRiverColor]
+                                  highlightedColor:[UIColor belizeHoleColor]
+                                      cornerRadius:3];
+    //[[UIAlertView appearance] setTintColor:[UIColor skyeBlueColor]];
+    
     return YES;
 }
 							

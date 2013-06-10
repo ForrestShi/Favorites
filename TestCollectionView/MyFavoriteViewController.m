@@ -10,7 +10,7 @@
 #import <AddressBookUI/AddressBookUI.h>
 #import "BlocksKit.h"
 #import "UIColor+Colours.h"
-
+#import "UIColor+FlatUI.h"
 
 
 @interface People : NSObject
@@ -50,6 +50,8 @@
     friends = [NSMutableArray array];
     [self.collectionView reloadData];
     self.editing = NO;
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.collectionView.backgroundColor = [UIColor ghostWhiteColor];
     
 //    UILongPressGestureRecognizer *editGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(startEdit)];
 //    UITapGestureRecognizer *tapToStop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopEdit)];
@@ -79,42 +81,54 @@
     delBtn.hidden = YES;
     delBtn.alpha = 0.;
     
+    [((UILabel*)[cell viewWithTag:101]) setTextAlignment:NSTextAlignmentCenter];
+    [((UILabel*)[cell viewWithTag:101]) setTextColor:[UIColor whiteColor]];
+    //[((UILabel*)[cell viewWithTag:101]) setFont:[UIFont fontWithName:@"Symbol" size:22. ]];
+    [((UILabel*)[cell viewWithTag:101]) setFont:[UIFont flatFontOfSize:22.]];
+    [((UILabel*)[cell viewWithTag:101]) setNumberOfLines:0];
+    
     if (indexPat.row == friends.count) {
         //the last one
         cell.backgroundColor = [UIColor skyeBlueColor];
         [((UILabel*)[cell viewWithTag:101]) setText:@"ADD"];
-        [((UILabel*)[cell viewWithTag:101]) setTextAlignment:NSTextAlignmentCenter];
-        [((UILabel*)[cell viewWithTag:101]) setTextColor:[UIColor whiteColor]];
-        [((UILabel*)[cell viewWithTag:101]) setFont:[UIFont fontWithName:@"Symbol" size:22. ]];
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
         imgView.image = nil;
-        
+                
     }else if(indexPat.row == (friends.count+1) ){
         cell.backgroundColor = [UIColor lightCreamColor];
         [((UILabel*)[cell viewWithTag:101]) setText:@"EDIT"];
-        [((UILabel*)[cell viewWithTag:101]) setTextAlignment:NSTextAlignmentCenter];
-        [((UILabel*)[cell viewWithTag:101]) setTextColor:[UIColor whiteColor]];
-        [((UILabel*)[cell viewWithTag:101]) setFont:[UIFont fontWithName:@"Symbol" size:22. ]];
-        
+        UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
+        imgView.image = nil;
 
     }else if (indexPat.row < friends.count ){
-        
+        cell.backgroundColor = [UIColor coffeeColor];
         UILabel *nameLabel = (UILabel*)[cell viewWithTag:101];
-        nameLabel.text = ((People*)[friends objectAtIndex:indexPat.row]).name;
         UIImage* img = ((People*)[friends objectAtIndex:indexPat.row]).faceImage;
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
         imgView.image = img;
+        if (!img) {
+            nameLabel.text = ((People*)[friends objectAtIndex:indexPat.row]).name;
+        }else{
+            nameLabel.text = @"";
+        }
         
         if (self.editing) {
-            cell.backgroundColor = [UIColor blueColor];
             delBtn.hidden = NO;
+            delBtn.alpha = 0.;
             [UIView animateWithDuration:.3 animations:^{
                 delBtn.alpha = 1.;
+                cell.backgroundColor = [UIColor grapefruitColor];
+                cell.alpha = 0.6;
+                
             }];
         }else{
-            delBtn.hidden = YES;
             [UIView animateWithDuration:.3 animations:^{
                 delBtn.alpha = 0.;
+                cell.backgroundColor = [UIColor coffeeColor];
+                cell.alpha = 1.;
+
+            } completion:^(BOOL finished) {
+                delBtn.hidden = YES;
             }];
             
         }

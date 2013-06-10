@@ -28,7 +28,7 @@
                                         <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLR-2l-5oP"/>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjS-Iu-bdE">
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="61" id="eYy-tG-uiw"/>
+                                                <constraint firstAttribute="height" constant="110" id="ocs-gN-P4q"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -43,15 +43,15 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="QjS-Iu-bdE" secondAttribute="leading" type="default" id="CSc-Lc-CF2"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="QjS-Iu-bdE" secondAttribute="trailing" type="default" id="CYk-Eh-sat"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="bottom" secondItem="fl9-y7-ncD" secondAttribute="bottom" type="default" id="1nc-4s-rWh"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="6SF-IC-PwC"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="Ad3-JW-NXc"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="Al4-bn-fhr"/>
                                     <constraint firstItem="gHr-ON-SLg" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" constant="6" id="DL3-aG-WUR"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="DSr-Ua-goU"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="GSO-Dg-pcR"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="bottom" secondItem="fl9-y7-ncD" secondAttribute="bottom" type="default" id="NQT-aG-dIz"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="Ydw-cz-cP5"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="FL3-N0-Abr"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="UCa-Ea-WxX"/>
                                     <constraint firstItem="gHr-ON-SLg" firstAttribute="centerX" secondItem="BLR-2l-5oP" secondAttribute="centerX" type="default" id="eV8-jN-OsI"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" constant="49" id="gTu-w8-og2"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="r2Y-NQ-tIW"/>
                                 </constraints>
                             </collectionViewCell>
                         </cells>
@@ -69,6 +69,26 @@
     <resources>
         <image name="delete.png" width="64" height="64"/>
     </resources>
+    <classes>
+        <class className="MyFavoriteViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MyFavoriteViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
