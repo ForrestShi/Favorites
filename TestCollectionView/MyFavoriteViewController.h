@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MyFavoriteViewController.h
 //  TestCollectionView
 //
 //  Created by forrest on 13-6-10.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface MyFavoriteViewController : UICollectionViewController
 
 @end

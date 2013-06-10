@@ -17,7 +17,10 @@
 		1898AE23176576A800834C14 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE22176576A800834C14 /* Default@2x.png */; };
 		1898AE25176576A800834C14 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE24176576A800834C14 /* Default-568h@2x.png */; };
 		1898AE28176576A800834C14 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE26176576A800834C14 /* MainStoryboard.storyboard */; };
-		1898AE2B176576A800834C14 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898AE2A176576A800834C14 /* ViewController.m */; };
+		1898AE33176577CE00834C14 /* MyFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898AE32176577CE00834C14 /* MyFavoriteViewController.m */; };
+		1898AE3517658CED00834C14 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE3417658CED00834C14 /* AddressBookUI.framework */; };
+		1898AE3717658CF500834C14 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE3617658CF500834C14 /* AddressBook.framework */; };
+		1898AE391765ADAB00834C14 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE381765ADAB00834C14 /* delete.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,8 +38,11 @@
 		1898AE22176576A800834C14 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1898AE24176576A800834C14 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1898AE27176576A800834C14 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1898AE29176576A800834C14 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1898AE2A176576A800834C14 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1898AE31176577CE00834C14 /* MyFavoriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFavoriteViewController.h; sourceTree = "<group>"; };
+		1898AE32176577CE00834C14 /* MyFavoriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFavoriteViewController.m; sourceTree = "<group>"; };
+		1898AE3417658CED00834C14 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		1898AE3617658CF500834C14 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1898AE381765ADAB00834C14 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +50,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1898AE3717658CF500834C14 /* AddressBook.framework in Frameworks */,
+				1898AE3517658CED00834C14 /* AddressBookUI.framework in Frameworks */,
 				1898AE0F176576A800834C14 /* UIKit.framework in Frameworks */,
 				1898AE11176576A800834C14 /* Foundation.framework in Frameworks */,
 				1898AE13176576A800834C14 /* CoreGraphics.framework in Frameworks */,
@@ -56,6 +64,8 @@
 		1898AE02176576A800834C14 = {
 			isa = PBXGroup;
 			children = (
+				1898AE3617658CF500834C14 /* AddressBook.framework */,
+				1898AE3417658CED00834C14 /* AddressBookUI.framework */,
 				1898AE14176576A800834C14 /* TestCollectionView */,
 				1898AE0D176576A800834C14 /* Frameworks */,
 				1898AE0C176576A800834C14 /* Products */,
@@ -86,9 +96,9 @@
 				1898AE1D176576A800834C14 /* AppDelegate.h */,
 				1898AE1E176576A800834C14 /* AppDelegate.m */,
 				1898AE26176576A800834C14 /* MainStoryboard.storyboard */,
-				1898AE29176576A800834C14 /* ViewController.h */,
-				1898AE2A176576A800834C14 /* ViewController.m */,
 				1898AE15176576A800834C14 /* Supporting Files */,
+				1898AE31176577CE00834C14 /* MyFavoriteViewController.h */,
+				1898AE32176577CE00834C14 /* MyFavoriteViewController.m */,
 			);
 			path = TestCollectionView;
 			sourceTree = "<group>";
@@ -96,6 +106,7 @@
 		1898AE15176576A800834C14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1898AE381765ADAB00834C14 /* delete.png */,
 				1898AE16176576A800834C14 /* TestCollectionView-Info.plist */,
 				1898AE17176576A800834C14 /* InfoPlist.strings */,
 				1898AE1A176576A800834C14 /* main.m */,
@@ -110,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1898AE0A176576A800834C14 /* TestCollectionView */ = {
+		1898AE0A176576A800834C14 /* TestCollectionView1 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "TestCollectionView" */;
+			buildConfigurationList = 1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "TestCollectionView1" */;
 			buildPhases = (
 				1898AE07176576A800834C14 /* Sources */,
 				1898AE08176576A800834C14 /* Frameworks */,
@@ -122,7 +133,7 @@
 			);
 			dependencies = (
 			);
-			name = TestCollectionView;
+			name = TestCollectionView1;
 			productName = TestCollectionView;
 			productReference = 1898AE0B176576A800834C14 /* TestCollectionView.app */;
 			productType = "com.apple.product-type.application";
@@ -148,7 +159,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1898AE0A176576A800834C14 /* TestCollectionView */,
+				1898AE0A176576A800834C14 /* TestCollectionView1 */,
 			);
 		};
 /* End PBXProject section */
@@ -163,6 +174,7 @@
 				1898AE23176576A800834C14 /* Default@2x.png in Resources */,
 				1898AE25176576A800834C14 /* Default-568h@2x.png in Resources */,
 				1898AE28176576A800834C14 /* MainStoryboard.storyboard in Resources */,
+				1898AE391765ADAB00834C14 /* delete.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +187,7 @@
 			files = (
 				1898AE1B176576A800834C14 /* main.m in Sources */,
 				1898AE1F176576A800834C14 /* AppDelegate.m in Sources */,
-				1898AE2B176576A800834C14 /* ViewController.m in Sources */,
+				1898AE33176577CE00834C14 /* MyFavoriteViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +303,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "TestCollectionView" */ = {
+		1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "TestCollectionView1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1898AE2F176576A800834C14 /* Debug */,
