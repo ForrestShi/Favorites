@@ -54,13 +54,19 @@
     self.collectionView.backgroundColor = [UIColor ghostWhiteColor];
     
 //    UILongPressGestureRecognizer *editGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(startEdit)];
-//    UITapGestureRecognizer *tapToStop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopEdit)];
-//    tapToStop.delegate = self;
-//    
+    UITapGestureRecognizer *tapToStop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopEdit)];
+    tapToStop.delegate = self;
+//
 //    [self.view addGestureRecognizer:editGesture];
-//    [self.view addGestureRecognizer:tapToStop];
+    [self.view addGestureRecognizer:tapToStop];
 }
 
+- (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{
+    if (touch.view.frame.size.width < 300 ) {
+        return NO;
+    }
+    return YES;
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -99,6 +105,14 @@
         [((UILabel*)[cell viewWithTag:101]) setText:@"EDIT"];
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
         imgView.image = nil;
+        
+        if (self.editing) {
+            [UIView animateWithDuration:.3 animations:^{
+                cell.backgroundColor = [UIColor infoBlueColor];
+            }];
+        }else{
+            cell.backgroundColor = [UIColor lightCreamColor];
+        }
 
     }else if (indexPat.row < friends.count ){
         cell.backgroundColor = [UIColor coffeeColor];
