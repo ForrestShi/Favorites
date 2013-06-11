@@ -8,4 +8,4 @@ pod 'Colours', '~> 2.0'
 pod "ShareKit"
 pod "BaseModel"
 pod "AutoCoding"
-
+pod "NYXImagesKit"

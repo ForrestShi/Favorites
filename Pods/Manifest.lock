@@ -13,6 +13,7 @@ PODS:
   - JSONKit (1.5pre)
   - KKPasscodeLock (0.1.5)
   - libffi (3.0.13)
+  - NYXImagesKit (2.2)
   - objectiveflickr (2.0.2)
   - SBJson (3.2)
   - ShareKit (2.3):
@@ -72,6 +73,7 @@ DEPENDENCIES:
   - FlatUIKit
   - iTellAFriend
   - KKPasscodeLock
+  - NYXImagesKit
   - ShareKit
 
 SPEC CHECKSUMS:
@@ -87,6 +89,7 @@ SPEC CHECKSUMS:
   JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
   KKPasscodeLock: 5fb69da49d4163215e0405a482e152bec671586d
   libffi: d9cf374b6b464c3ea53b13219536fad3bfb06e84
+  NYXImagesKit: 945719043b7b06078ce20322799dcd1776bc3cea
   objectiveflickr: 17f5f1fd4b9b9d6761a9545493c79221f65604c3
   SBJson: e60b4dc22448c2ae1e754b523a4ab53408e85c8d
   ShareKit: 4395f5b5529ba9d824968180519677f422eeb730

@@ -286,7 +286,7 @@
     
     if (ABPersonHasImageData(person)) {
         UIImage *addressVookImage = [UIImage imageWithData:(__bridge NSData*)ABPersonCopyImageData(person)];
-        newFriend.faceImage = addressVookImage;
+        newFriend.faceImage = [addressVookImage scaleByFactor:.5];
     }
 
     

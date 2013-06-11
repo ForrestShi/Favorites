@@ -9,7 +9,5 @@
 #import "People.h"
 
 @implementation People
-@synthesize name,phone,faceImage;
-
-
+@synthesize name,phone,faceImage,callCount,callTimeLength;
 @end
