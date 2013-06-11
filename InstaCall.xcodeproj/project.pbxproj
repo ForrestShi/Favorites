@@ -13,6 +13,21 @@
 		184BD9DC1766E481000FCFE4 /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9D71766E480000FCFE4 /* QBFlatButton.m */; };
 		184BD9DD1766E481000FCFE4 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BD9D91766E480000FCFE4 /* libFlurry.a */; };
 		184BD9E11766EB7B000FCFE4 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9E01766EB7B000FCFE4 /* close.png */; };
+		184BD9E71766F046000FCFE4 /* MoreAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9E61766F046000FCFE4 /* MoreAppsViewController.m */; };
+		184BD9E91766F0F2000FCFE4 /* myApps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9E81766F0F2000FCFE4 /* myApps.plist */; };
+		184BD9F21766F115000FCFE4 /* ape.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9EA1766F115000FCFE4 /* ape.png */; };
+		184BD9F31766F115000FCFE4 /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9EB1766F115000FCFE4 /* menu.png */; };
+		184BD9F41766F115000FCFE4 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9EC1766F115000FCFE4 /* note.png */; };
+		184BD9F51766F115000FCFE4 /* noteplus.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9ED1766F115000FCFE4 /* noteplus.png */; };
+		184BD9F61766F115000FCFE4 /* oil.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9EE1766F115000FCFE4 /* oil.png */; };
+		184BD9F71766F115000FCFE4 /* search.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9EF1766F115000FCFE4 /* search.png */; };
+		184BD9F81766F115000FCFE4 /* sepia_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9F01766F115000FCFE4 /* sepia_icon.png */; };
+		184BD9F91766F115000FCFE4 /* stickies.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9F11766F115000FCFE4 /* stickies.png */; };
+		184BD9FC1766F940000FCFE4 /* timercam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9FB1766F940000FCFE4 /* timercam.jpg */; };
+		184BD9FE1766FAD1000FCFE4 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9FD1766FAD1000FCFE4 /* password.png */; };
+		184BDA001766FB86000FCFE4 /* artcam.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9FF1766FB86000FCFE4 /* artcam.png */; };
+		184BDA021766FC7C000FCFE4 /* toon.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA011766FC7C000FCFE4 /* toon.png */; };
+		184BDA041766FCB9000FCFE4 /* nose.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA031766FCB9000FCFE4 /* nose.png */; };
 		1898AE0F176576A800834C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE0E176576A800834C14 /* UIKit.framework */; };
 		1898AE11176576A800834C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE10176576A800834C14 /* Foundation.framework */; };
 		1898AE13176576A800834C14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE12176576A800834C14 /* CoreGraphics.framework */; };
@@ -42,6 +57,22 @@
 		184BD9D81766E480000FCFE4 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
 		184BD9D91766E480000FCFE4 /* libFlurry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry.a; sourceTree = "<group>"; };
 		184BD9E01766EB7B000FCFE4 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		184BD9E51766F046000FCFE4 /* MoreAppsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoreAppsViewController.h; sourceTree = "<group>"; };
+		184BD9E61766F046000FCFE4 /* MoreAppsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoreAppsViewController.m; sourceTree = "<group>"; };
+		184BD9E81766F0F2000FCFE4 /* myApps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = myApps.plist; sourceTree = "<group>"; };
+		184BD9EA1766F115000FCFE4 /* ape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ape.png; sourceTree = "<group>"; };
+		184BD9EB1766F115000FCFE4 /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		184BD9EC1766F115000FCFE4 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		184BD9ED1766F115000FCFE4 /* noteplus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = noteplus.png; sourceTree = "<group>"; };
+		184BD9EE1766F115000FCFE4 /* oil.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oil.png; sourceTree = "<group>"; };
+		184BD9EF1766F115000FCFE4 /* search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = search.png; sourceTree = "<group>"; };
+		184BD9F01766F115000FCFE4 /* sepia_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sepia_icon.png; sourceTree = "<group>"; };
+		184BD9F11766F115000FCFE4 /* stickies.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stickies.png; sourceTree = "<group>"; };
+		184BD9FB1766F940000FCFE4 /* timercam.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timercam.jpg; sourceTree = "<group>"; };
+		184BD9FD1766FAD1000FCFE4 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		184BD9FF1766FB86000FCFE4 /* artcam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artcam.png; sourceTree = "<group>"; };
+		184BDA011766FC7C000FCFE4 /* toon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toon.png; sourceTree = "<group>"; };
+		184BDA031766FCB9000FCFE4 /* nose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nose.png; sourceTree = "<group>"; };
 		1898AE0B176576A800834C14 /* InstaCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1898AE0E176576A800834C14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1898AE10176576A800834C14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +123,8 @@
 				184BD9CF1766E44F000FCFE4 /* SchemeViewController.m */,
 				184BD9D01766E44F000FCFE4 /* SettingViewController.h */,
 				184BD9D11766E44F000FCFE4 /* SettingViewController.m */,
+				184BD9E51766F046000FCFE4 /* MoreAppsViewController.h */,
+				184BD9E61766F046000FCFE4 /* MoreAppsViewController.m */,
 			);
 			name = Setting;
 			path = TestCollectionView;
@@ -107,6 +140,27 @@
 				184BD9D91766E480000FCFE4 /* libFlurry.a */,
 			);
 			name = Common;
+			sourceTree = "<group>";
+		};
+		184BD9FA1766F11D000FCFE4 /* myapps */ = {
+			isa = PBXGroup;
+			children = (
+				184BD9FB1766F940000FCFE4 /* timercam.jpg */,
+				184BD9E81766F0F2000FCFE4 /* myApps.plist */,
+				184BD9FD1766FAD1000FCFE4 /* password.png */,
+				184BD9FF1766FB86000FCFE4 /* artcam.png */,
+				184BD9EA1766F115000FCFE4 /* ape.png */,
+				184BDA031766FCB9000FCFE4 /* nose.png */,
+				184BDA011766FC7C000FCFE4 /* toon.png */,
+				184BD9EB1766F115000FCFE4 /* menu.png */,
+				184BD9EC1766F115000FCFE4 /* note.png */,
+				184BD9ED1766F115000FCFE4 /* noteplus.png */,
+				184BD9EE1766F115000FCFE4 /* oil.png */,
+				184BD9EF1766F115000FCFE4 /* search.png */,
+				184BD9F01766F115000FCFE4 /* sepia_icon.png */,
+				184BD9F11766F115000FCFE4 /* stickies.png */,
+			);
+			name = myapps;
 			sourceTree = "<group>";
 		};
 		1898AE02176576A800834C14 = {
@@ -157,6 +211,7 @@
 		1898AE15176576A800834C14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				184BD9FA1766F11D000FCFE4 /* myapps */,
 				1898AE381765ADAB00834C14 /* delete.png */,
 				184BD9E01766EB7B000FCFE4 /* close.png */,
 				1898AE16176576A800834C14 /* InstaCall-Info.plist */,
@@ -230,6 +285,20 @@
 				1898AE28176576A800834C14 /* MainStoryboard.storyboard in Resources */,
 				1898AE391765ADAB00834C14 /* delete.png in Resources */,
 				184BD9E11766EB7B000FCFE4 /* close.png in Resources */,
+				184BD9E91766F0F2000FCFE4 /* myApps.plist in Resources */,
+				184BD9F21766F115000FCFE4 /* ape.png in Resources */,
+				184BD9F31766F115000FCFE4 /* menu.png in Resources */,
+				184BD9F41766F115000FCFE4 /* note.png in Resources */,
+				184BD9F51766F115000FCFE4 /* noteplus.png in Resources */,
+				184BD9F61766F115000FCFE4 /* oil.png in Resources */,
+				184BD9F71766F115000FCFE4 /* search.png in Resources */,
+				184BD9F81766F115000FCFE4 /* sepia_icon.png in Resources */,
+				184BD9F91766F115000FCFE4 /* stickies.png in Resources */,
+				184BD9FC1766F940000FCFE4 /* timercam.jpg in Resources */,
+				184BD9FE1766FAD1000FCFE4 /* password.png in Resources */,
+				184BDA001766FB86000FCFE4 /* artcam.png in Resources */,
+				184BDA021766FC7C000FCFE4 /* toon.png in Resources */,
+				184BDA041766FCB9000FCFE4 /* nose.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +347,7 @@
 				184BD9D31766E44F000FCFE4 /* SchemeViewController.m in Sources */,
 				184BD9D41766E44F000FCFE4 /* SettingViewController.m in Sources */,
 				184BD9DC1766E481000FCFE4 /* QBFlatButton.m in Sources */,
+				184BD9E71766F046000FCFE4 /* MoreAppsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

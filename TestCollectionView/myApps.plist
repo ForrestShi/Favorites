@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>6.camera+sepia</key>
+	<dict>
+		<key>info</key>
+		<string>Turn any photos into oil painting effects with your finger, share with your friends immediately with facebook,twitter,or email.
+
+This version is supported both for iPhone&amp;iPad from iOS 3.2. One time purchase for both devices. 
+
+This application is unique professional oil painting photo effects &amp; filters application. 
+We are focusing on professional image processing, with simple finger touch application to replace complicated operations using PhotoShop.
+Maximum ease and comfort in usage were our main goals when creating the user interface. Just enjoy experimenting with your photos and leave other concerns aside!</string>
+		<key>icon</key>
+		<string>sepia_icon.png</string>
+		<key>link</key>
+		<string>https://itunes.apple.com/app/camera-+-sepia-pro/id578137731?mt=8</string>
+		<key>name</key>
+		<string>Old photo effects </string>
+	</dict>
+	<key>paswords</key>
+	<dict>
+		<key>info</key>
+		<string></string>
+		<key>icon</key>
+		<string>password.png</string>
+		<key>link</key>
+		<string>https://itunes.apple.com/app/passwords-pro/id654443419?l=en&amp;mt=8</string>
+		<key>name</key>
+		<string>Manage passwords</string>
+	</dict>
+	<key>artcam</key>
+	<dict>
+		<key>info</key>
+		<string></string>
+		<key>icon</key>
+		<string>artcam.png</string>
+		<key>link</key>
+		<string>https://itunes.apple.com/app/artcam/id538737730?l=en&amp;mt=8</string>
+		<key>name</key>
+		<string>Enjoy real time camera effects </string>
+	</dict>
+	<key>big nose</key>
+	<dict>
+		<key>info</key>
+		<string></string>
+		<key>icon</key>
+		<string>nose.png</string>
+		<key>link</key>
+		<string>https://itunes.apple.com/app/christmas-fun-camera/id583693496?l=en&amp;mt=8</string>
+		<key>name</key>
+		<string>Take a big nose face photo</string>
+	</dict>
+	<key>toon</key>
+	<dict>
+		<key>info</key>
+		<string></string>
+		<key>icon</key>
+		<string>toon.png</string>
+		<key>link</key>
+		<string>https://itunes.apple.com/app/camera-+-toon-pro/id583614582?l=en&amp;mt=8</string>
+		<key>name</key>
+		<string>The cool toon effect </string>
+	</dict>
+</dict>
+</plist>

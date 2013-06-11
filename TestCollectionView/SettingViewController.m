@@ -13,6 +13,7 @@
 #import "Flurry.h"
 #import "iTellAFriend.h"
 #import "BlocksKit.h"
+#import "MoreAppsViewController.h"
 
 @interface SettingViewController ()<MFMailComposeViewControllerDelegate>{
     QBFlatButton *recommendBtn;
@@ -207,7 +208,11 @@
 }
 
 - (void)moreApp{
-    
+    MoreAppsViewController *mVC = [[MoreAppsViewController alloc] init];
+    mVC.modalTransitionStyle = UIModalTransitionStylePartialCurl;
+    [self presentViewController:mVC animated:YES completion:^{
+        
+    }];
 }
 
 - (void)moreSchemes{
