@@ -19,12 +19,11 @@
 
 @interface MyFavoriteViewController ()<UICollectionViewDataSource, UICollectionViewDelegate ,ABPeoplePickerNavigationControllerDelegate , UIGestureRecognizerDelegate>
 
-@property (nonatomic,strong) NSMutableArray *friends;
 @property (nonatomic,assign) BOOL editing;
 @end
 
 @implementation MyFavoriteViewController
-@synthesize friends,editing;
+@synthesize editing;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -40,7 +39,6 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    friends =  [NSMutableArray array];
     [self.collectionView reloadData];
     self.editing = NO;
     self.view.backgroundColor = [UIColor whiteColor];
@@ -78,7 +76,7 @@
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return friends.count + 2;
+    return [Group sharedInstance].favorites.count + 2;
 }
 
 // The cell that is returned must be retrieved from a call to -dequeueReusableCellWithReuseIdentifier:forIndexPath:
@@ -96,14 +94,14 @@
     [((UILabel*)[cell viewWithTag:101]) setFont:[UIFont flatFontOfSize:22.]];
     [((UILabel*)[cell viewWithTag:101]) setNumberOfLines:0];
     
-    if (indexPat.row == friends.count) {
+    if (indexPat.row == [Group sharedInstance].favorites.count) {
         //the last one
         cell.backgroundColor = [UIColor skyeBlueColor];
         [((UILabel*)[cell viewWithTag:101]) setText:@"ADD"];
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
         imgView.image = nil;
                 
-    }else if(indexPat.row == (friends.count+1) ){
+    }else if(indexPat.row == ([Group sharedInstance].favorites.count+1) ){
         cell.backgroundColor = [UIColor lightCreamColor];
         [((UILabel*)[cell viewWithTag:101]) setText:@"EDIT"];
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
@@ -117,14 +115,14 @@
             cell.backgroundColor = [UIColor lightCreamColor];
         }
 
-    }else if (indexPat.row < friends.count ){
+    }else if (indexPat.row < [Group sharedInstance].favorites.count ){
         cell.backgroundColor = [UIColor coffeeColor];
         UILabel *nameLabel = (UILabel*)[cell viewWithTag:101];
-        UIImage* img = ((People*)[friends objectAtIndex:indexPat.row]).faceImage;
+        UIImage* img = ((People*)[[Group sharedInstance].favorites objectAtIndex:indexPat.row]).faceImage;
         UIImageView *imgView = (UIImageView*)[cell viewWithTag:100];
         imgView.image = img;
         if (!img) {
-            nameLabel.text = ((People*)[friends objectAtIndex:indexPat.row]).name;
+            nameLabel.text = ((People*)[[Group sharedInstance].favorites objectAtIndex:indexPat.row]).name;
         }else{
             nameLabel.text = @"";
         }
@@ -168,29 +166,32 @@
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
     if (self.editing) {
-        if (indexPath.row < friends.count) {
-            if (friends) {
+        if (indexPath.row < [Group sharedInstance].favorites.count) {
+            if ([Group sharedInstance].favorites) {
                 NSLog(@"remove one ");
-                [friends removeObjectAtIndex:indexPath.row];
+                [[Group sharedInstance].favorites removeObjectAtIndex:indexPath.row];
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+                    [[Group sharedInstance] save];
+                });
                 [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
                 [self.collectionView reloadData];
-                if (friends.count == 0 ) {
+                if ([Group sharedInstance].favorites.count == 0 ) {
                     [self stopEdit];
                 }
                 return;
             }
-        }else if (indexPath.row == friends.count){
+        }else if (indexPath.row == [Group sharedInstance].favorites.count){
             return;
-        }else if (indexPath.row == (friends.count+1) ){
+        }else if (indexPath.row == ([Group sharedInstance].favorites.count+1) ){
             [self stopEdit];
             return;
         }
 
     }else{
         
-        if (indexPath.row < friends.count) {
+        if (indexPath.row < [Group sharedInstance].favorites.count) {
 
-            NSString *phone = [NSString stringWithFormat:@"telprompt://%@", ((People*)[friends objectAtIndex:indexPath.row]).phone];
+            NSString *phone = [NSString stringWithFormat:@"telprompt://%@", ((People*)[[Group sharedInstance].favorites objectAtIndex:indexPath.row]).phone];
             NSLog(@"called %@", phone);
 
             if (phone) {
@@ -201,7 +202,7 @@
             }
         
 
-        }else if (indexPath.row == friends.count){
+        }else if (indexPath.row == [Group sharedInstance].favorites.count){
             ABAddressBookRef addressBook = ABAddressBookCreate();
             __block BOOL accessGranted = NO;
             if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
@@ -228,7 +229,7 @@
                 }];
             }
 
-        }else if (indexPath.row == (friends.count+1) ){
+        }else if (indexPath.row == ([Group sharedInstance].favorites.count+1) ){
             [self startEdit];
         }
 
@@ -289,7 +290,10 @@
     }
 
     
-    [friends addObject:newFriend];
+    [[Group sharedInstance].favorites addObject:newFriend];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+        [[Group sharedInstance] save];
+    });
     [self.collectionView reloadData];
     
     NSLog(@"name %@ phone %@", name, aPhone);

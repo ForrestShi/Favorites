@@ -12,6 +12,12 @@
 #define COCOAPODS_VERSION_MINOR_Appirater 0
 #define COCOAPODS_VERSION_PATCH_Appirater 3
 
+// AutoCoding
+#define COCOAPODS_POD_AVAILABLE_AutoCoding
+#define COCOAPODS_VERSION_MAJOR_AutoCoding 2
+#define COCOAPODS_VERSION_MINOR_AutoCoding 0
+#define COCOAPODS_VERSION_PATCH_AutoCoding 2
+
 // BaseModel
 #define COCOAPODS_POD_AVAILABLE_BaseModel
 #define COCOAPODS_VERSION_MAJOR_BaseModel 2

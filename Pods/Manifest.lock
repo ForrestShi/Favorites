@@ -1,5 +1,6 @@
 PODS:
   - Appirater (1.0.3)
+  - AutoCoding (2.0.2)
   - BaseModel (2.3.1)
   - BlocksKit (1.8.2):
     - libffi
@@ -64,6 +65,7 @@ PODS:
 
 DEPENDENCIES:
   - Appirater
+  - AutoCoding
   - BaseModel
   - BlocksKit
   - Colours (~> 2.0)
@@ -74,6 +76,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Appirater: 1c146af7b0ef3e2114a17db2e185f94367f63a99
+  AutoCoding: 5ca26eac460ed177d07dbd4572a3e980238001dd
   BaseModel: 1c3251af9526bacba236298543f76d1c2a11b569
   BlocksKit: 7396526b0816734103f6133fbb1a520c8b04e80c
   Colours: db86d21666586908dee6f27f54d04bd81a67984a
