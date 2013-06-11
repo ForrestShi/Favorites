@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "UINavigationBar+FlatUI.h"
+#import "SplashViewController.h"
+
 
 @implementation AppDelegate
 
@@ -20,9 +22,23 @@
                                       cornerRadius:3];
     //[[UIAlertView appearance] setTintColor:[UIColor skyeBlueColor]];
     
+    application.statusBarHidden = YES;
+    SplashViewController *svc = [[SplashViewController alloc] init];
+    svc.view.frame = [UIScreen mainScreen].applicationFrame;
+    [self.window.rootViewController.view addSubview:svc.view];
+    double delayInSeconds = .5;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [UIView animateWithDuration:.5 animations:^{
+            svc.view.alpha = 0.;
+        } completion:^(BOOL finished) {
+            [svc.view removeFromSuperview];
+        }];
+    });
+    
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
