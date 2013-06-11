@@ -11,7 +11,7 @@
 #import "BlocksKit.h"
 #import "UIColor+Colours.h"
 #import "UIColor+FlatUI.h"
-
+#import "SettingViewController.h"
 
 @interface People : NSObject
 @property (nonatomic,strong) NSString *name;
@@ -53,12 +53,22 @@
     self.view.backgroundColor = [UIColor whiteColor];
     self.collectionView.backgroundColor = [UIColor ghostWhiteColor];
     
-//    UILongPressGestureRecognizer *editGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(startEdit)];
     UITapGestureRecognizer *tapToStop = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(stopEdit)];
     tapToStop.delegate = self;
-//
-//    [self.view addGestureRecognizer:editGesture];
     [self.view addGestureRecognizer:tapToStop];
+    
+    UIButton *infoBtn = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    infoBtn.frame = CGRectMake(self.view.frame.size.width - 44., self.view.frame.size.height - 44., 44., 44.);
+    [infoBtn addTarget:self action:@selector(onInfo) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:infoBtn];
+}
+
+- (void)onInfo{
+
+    SettingViewController *settingVC = [[SettingViewController alloc] init];
+    [self presentViewController:settingVC animated:YES completion:^{
+        
+    }];
 }
 
 - (BOOL) gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch{

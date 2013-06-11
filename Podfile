@@ -6,3 +6,4 @@ pod "KKPasscodeLock"
 pod 'FontAwesomeIconFactory'
 pod "iTellAFriend"
 pod 'Colours', '~> 2.0'
+pod "ViewDeck"

@@ -42,6 +42,12 @@
 #define COCOAPODS_VERSION_MINOR_KKPasscodeLock 1
 #define COCOAPODS_VERSION_PATCH_KKPasscodeLock 5
 
+// ViewDeck
+#define COCOAPODS_POD_AVAILABLE_ViewDeck
+#define COCOAPODS_VERSION_MAJOR_ViewDeck 2
+#define COCOAPODS_VERSION_MINOR_ViewDeck 3
+#define COCOAPODS_VERSION_PATCH_ViewDeck 1
+
 // iTellAFriend
 #define COCOAPODS_POD_AVAILABLE_iTellAFriend
 #define COCOAPODS_VERSION_MAJOR_iTellAFriend 1

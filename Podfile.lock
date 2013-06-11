@@ -8,6 +8,7 @@ PODS:
   - iTellAFriend (1.4.0)
   - KKPasscodeLock (0.1.5)
   - libffi (3.0.13)
+  - ViewDeck (2.3.1)
 
 DEPENDENCIES:
   - Appirater
@@ -17,6 +18,7 @@ DEPENDENCIES:
   - FontAwesomeIconFactory
   - iTellAFriend
   - KKPasscodeLock
+  - ViewDeck
 
 SPEC CHECKSUMS:
   Appirater: 1c146af7b0ef3e2114a17db2e185f94367f63a99
@@ -27,5 +29,6 @@ SPEC CHECKSUMS:
   iTellAFriend: b2d7098d9f28b8f2edaab8b754ff181a8da6dfd3
   KKPasscodeLock: 5fb69da49d4163215e0405a482e152bec671586d
   libffi: d9cf374b6b464c3ea53b13219536fad3bfb06e84
+  ViewDeck: 2cdc67c4b41a10cafc7556b982f028409e33604d
 
 COCOAPODS: 0.19.1

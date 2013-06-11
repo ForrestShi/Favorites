@@ -9,7 +9,6 @@
 #import "AppDelegate.h"
 #import "UINavigationBar+FlatUI.h"
 
-
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
