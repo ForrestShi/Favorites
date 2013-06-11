@@ -12,17 +12,10 @@
 #import "UIColor+Colours.h"
 #import "UIColor+FlatUI.h"
 #import "SettingViewController.h"
+#import "BaseModel.h"
+#import "People.h"
+#import "Group.h"
 
-@interface People : NSObject
-@property (nonatomic,strong) NSString *name;
-@property (nonatomic,strong) NSString *phone;
-@property (nonatomic,strong) UIImage *faceImage;
-
-@end
-
-@implementation People
-@synthesize name,phone,faceImage;
-@end
 
 @interface MyFavoriteViewController ()<UICollectionViewDataSource, UICollectionViewDelegate ,ABPeoplePickerNavigationControllerDelegate , UIGestureRecognizerDelegate>
 
@@ -47,7 +40,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    friends = [NSMutableArray array];
+    friends =  [NSMutableArray array];
     [self.collectionView reloadData];
     self.editing = NO;
     self.view.backgroundColor = [UIColor whiteColor];

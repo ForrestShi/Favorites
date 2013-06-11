@@ -33,6 +33,8 @@
 		184BDA16176718EF000FCFE4 /* Icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA0D176718EF000FCFE4 /* Icon1024.png */; };
 		184BDA1A17672AD5000FCFE4 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1917672AD5000FCFE4 /* SplashViewController.m */; };
 		184BDA1D17672CD7000FCFE4 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1C17672CD7000FCFE4 /* SplashView.m */; };
+		184BDA2017673A7A000FCFE4 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1F17673A79000FCFE4 /* People.m */; };
+		184BDA2317673EB3000FCFE4 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA2217673EB2000FCFE4 /* Group.m */; };
 		1898AE0F176576A800834C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE0E176576A800834C14 /* UIKit.framework */; };
 		1898AE11176576A800834C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE10176576A800834C14 /* Foundation.framework */; };
 		1898AE13176576A800834C14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE12176576A800834C14 /* CoreGraphics.framework */; };
@@ -86,6 +88,10 @@
 		184BDA1917672AD5000FCFE4 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
 		184BDA1B17672CD6000FCFE4 /* SplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
 		184BDA1C17672CD7000FCFE4 /* SplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
+		184BDA1E17673A79000FCFE4 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		184BDA1F17673A79000FCFE4 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
+		184BDA2117673EB2000FCFE4 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
+		184BDA2217673EB2000FCFE4 /* Group.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Group.m; sourceTree = "<group>"; };
 		1898AE0B176576A800834C14 /* InstaCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1898AE0E176576A800834C14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1898AE10176576A800834C14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -213,6 +219,10 @@
 				1898AE32176577CE00834C14 /* MyFavoriteViewController.m */,
 				184BDA1817672AD4000FCFE4 /* SplashViewController.h */,
 				184BDA1917672AD5000FCFE4 /* SplashViewController.m */,
+				184BDA2117673EB2000FCFE4 /* Group.h */,
+				184BDA2217673EB2000FCFE4 /* Group.m */,
+				184BDA1E17673A79000FCFE4 /* People.h */,
+				184BDA1F17673A79000FCFE4 /* People.m */,
 			);
 			path = TestCollectionView;
 			sourceTree = "<group>";
@@ -374,6 +384,8 @@
 				184BD9E71766F046000FCFE4 /* MoreAppsViewController.m in Sources */,
 				184BDA1A17672AD5000FCFE4 /* SplashViewController.m in Sources */,
 				184BDA1D17672CD7000FCFE4 /* SplashView.m in Sources */,
+				184BDA2017673A7A000FCFE4 /* People.m in Sources */,
+				184BDA2317673EB3000FCFE4 /* Group.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
