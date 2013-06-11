@@ -132,14 +132,14 @@
             delBtn.alpha = 0.;
             [UIView animateWithDuration:.3 animations:^{
                 delBtn.alpha = 1.;
-                cell.backgroundColor = [UIColor grapefruitColor];
+                cell.backgroundColor = [UIColor brownColor];
                 cell.alpha = 0.6;
                 
             }];
         }else{
             [UIView animateWithDuration:.3 animations:^{
                 delBtn.alpha = 0.;
-                cell.backgroundColor = [UIColor coffeeColor];
+                cell.backgroundColor = [UIColor greenSeaColor];
                 cell.alpha = 1.;
 
             } completion:^(BOOL finished) {
@@ -163,12 +163,39 @@
     [self.collectionView reloadData];
 }
 
+- (void)addOneFavorite{
+    ABAddressBookRef addressBook = ABAddressBookCreate();
+    __block BOOL accessGranted = NO;
+    if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
+        dispatch_semaphore_t sema = dispatch_semaphore_create(0);
+        ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
+            accessGranted = granted;
+            dispatch_semaphore_signal(sema);
+        });
+        dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
+        //dispatch_release(sema);
+    }
+    else { // we're on iOS 5 or older
+        accessGranted = YES;
+    }
+    
+    if (accessGranted) {
+        // Do whatever you want here.
+        
+        ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
+        picker.peoplePickerDelegate = self;
+        
+        [self presentViewController:picker animated:YES completion:^{
+            
+        }];
+    }
+}
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
 
     if (self.editing) {
         if (indexPath.row < [Group sharedInstance].favorites.count) {
             if ([Group sharedInstance].favorites) {
-                NSLog(@"remove one ");
+                DLog(@"remove one ");
                 [[Group sharedInstance].favorites removeObjectAtIndex:indexPath.row];
                 dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
                     [[Group sharedInstance] save];
@@ -181,6 +208,8 @@
                 return;
             }
         }else if (indexPath.row == [Group sharedInstance].favorites.count){
+            [self stopEdit];
+            [self addOneFavorite];
             return;
         }else if (indexPath.row == ([Group sharedInstance].favorites.count+1) ){
             [self stopEdit];
@@ -192,43 +221,26 @@
         if (indexPath.row < [Group sharedInstance].favorites.count) {
 
             NSString *phone = [NSString stringWithFormat:@"telprompt://%@", ((People*)[[Group sharedInstance].favorites objectAtIndex:indexPath.row]).phone];
-            NSLog(@"called %@", phone);
+            DLog(@"called %@", phone);
 
+            UICollectionViewCell *cell = [collectionView cellForItemAtIndexPath:indexPath];
+            [self.view bringSubviewToFront:cell];
+            [UIView animateWithDuration:.3 delay:0 options:UIViewAnimationOptionAutoreverse animations:^{
+                cell.alpha = 0.3;
+            } completion:^(BOOL finished) {
+                cell.alpha = 1.;
+            }];
+            
             if (phone) {
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phone]];
             }else{
                 //TODO:
-                NSLog(@"no phone");
+                DLog(@"no phone");
             }
         
 
         }else if (indexPath.row == [Group sharedInstance].favorites.count){
-            ABAddressBookRef addressBook = ABAddressBookCreate();
-            __block BOOL accessGranted = NO;
-            if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
-                dispatch_semaphore_t sema = dispatch_semaphore_create(0);
-                ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
-                    accessGranted = granted;
-                    dispatch_semaphore_signal(sema);
-                });
-                dispatch_semaphore_wait(sema, DISPATCH_TIME_FOREVER);
-                //dispatch_release(sema);
-            }
-            else { // we're on iOS 5 or older
-                accessGranted = YES;
-            }
-            
-            if (accessGranted) {
-                // Do whatever you want here.
-                
-                ABPeoplePickerNavigationController *picker = [[ABPeoplePickerNavigationController alloc] init];
-                picker.peoplePickerDelegate = self;
-                
-                [self presentViewController:picker animated:YES completion:^{
-                    
-                }];
-            }
-
+            [self addOneFavorite];
         }else if (indexPath.row == ([Group sharedInstance].favorites.count+1) ){
             [self startEdit];
         }
@@ -296,7 +308,7 @@
     });
     [self.collectionView reloadData];
     
-    NSLog(@"name %@ phone %@", name, aPhone);
+    DLog(@"name %@ phone %@", name, aPhone);
     [peoplePicker dismissViewControllerAnimated:YES completion:^{
         
     }];

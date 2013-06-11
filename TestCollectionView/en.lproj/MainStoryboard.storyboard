@@ -29,30 +29,26 @@
                                         <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLR-2l-5oP"/>
                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjS-Iu-bdE">
                                             <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="0Yb-og-Qse"/>
                                                 <constraint firstAttribute="height" constant="110" id="ocs-gN-P4q"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleToFill" image="delete.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-ON-SLg">
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="50" id="L9v-6y-gIk"/>
-                                            </constraints>
-                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleAspectFill" image="remove.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-ON-SLg"/>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="bottom" secondItem="fl9-y7-ncD" secondAttribute="bottom" type="default" id="1nc-4s-rWh"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="6SF-IC-PwC"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="Ad3-JW-NXc"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="Al4-bn-fhr"/>
-                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" constant="6" id="DL3-aG-WUR"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="FL3-N0-Abr"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="UCa-Ea-WxX"/>
-                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="centerX" secondItem="BLR-2l-5oP" secondAttribute="centerX" type="default" id="eV8-jN-OsI"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="r2Y-NQ-tIW"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="5XI-UR-1dO"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="8OM-Xx-lg2"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" constant="3" id="BOy-o0-iEe"/>
+                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="centerY" secondItem="BLR-2l-5oP" secondAttribute="centerY" type="default" id="JEm-IW-oLi"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="centerX" secondItem="gHr-ON-SLg" secondAttribute="centerX" type="default" id="WNU-vD-9gJ"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="ise-Ge-HA9"/>
+                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="centerY" secondItem="fl9-y7-ncD" secondAttribute="centerY" type="default" id="jVf-c9-DpP"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="q9R-5l-fVZ"/>
                                 </constraints>
                             </collectionViewCell>
                         </cells>
@@ -68,7 +64,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="delete.png" width="64" height="64"/>
+        <image name="remove.png" width="64" height="64"/>
     </resources>
     <classes>
         <class className="MyFavoriteViewController" superclassName="UICollectionViewController">

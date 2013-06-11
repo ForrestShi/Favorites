@@ -41,6 +41,8 @@
 		184BDA2B176773FD000FCFE4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA2A176773FD000FCFE4 /* MobileCoreServices.framework */; };
 		184BDA2D17677403000FCFE4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA2C17677403000FCFE4 /* QuartzCore.framework */; };
 		184BDA2F17677408000FCFE4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA2E17677408000FCFE4 /* CoreImage.framework */; };
+		184BDA3217678278000FCFE4 /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA3017678275000FCFE4 /* remove.png */; };
+		184BDA3317678278000FCFE4 /* remove@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA3117678277000FCFE4 /* remove@2x.png */; };
 		1898AE0F176576A800834C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE0E176576A800834C14 /* UIKit.framework */; };
 		1898AE11176576A800834C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE10176576A800834C14 /* Foundation.framework */; };
 		1898AE13176576A800834C14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE12176576A800834C14 /* CoreGraphics.framework */; };
@@ -104,6 +106,8 @@
 		184BDA2A176773FD000FCFE4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		184BDA2C17677403000FCFE4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		184BDA2E17677408000FCFE4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		184BDA3017678275000FCFE4 /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
+		184BDA3117678277000FCFE4 /* remove@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remove@2x.png"; sourceTree = "<group>"; };
 		1898AE0B176576A800834C14 /* InstaCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1898AE0E176576A800834C14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1898AE10176576A800834C14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -254,6 +258,8 @@
 		1898AE15176576A800834C14 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				184BDA3017678275000FCFE4 /* remove.png */,
+				184BDA3117678277000FCFE4 /* remove@2x.png */,
 				184BD9FA1766F11D000FCFE4 /* myapps */,
 				1898AE381765ADAB00834C14 /* delete.png */,
 				184BD9E01766EB7B000FCFE4 /* close.png */,
@@ -357,6 +363,8 @@
 				184BDA14176718EF000FCFE4 /* Icon.png in Resources */,
 				184BDA15176718EF000FCFE4 /* Icon512.png in Resources */,
 				184BDA16176718EF000FCFE4 /* Icon1024.png in Resources */,
+				184BDA3217678278000FCFE4 /* remove.png in Resources */,
+				184BDA3317678278000FCFE4 /* remove@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
