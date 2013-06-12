@@ -182,7 +182,7 @@
                                                                kCFBundleVersionKey);
         NSString *appVersion = (__bridge NSString *)ver;
 
-        [mvc setSubject:[NSString stringWithFormat:@"Passwords Pro %@", appVersion]];
+        [mvc setSubject:[NSString stringWithFormat:@"%@ %@",[iTellAFriend sharedInstance].applicationName ,appVersion]];
         [mvc setToRecipients:@[@"design4app@gmail.com"]];
         [mvc setMessageBody:@" " isHTML:NO];
         mvc.mailComposeDelegate = self;
