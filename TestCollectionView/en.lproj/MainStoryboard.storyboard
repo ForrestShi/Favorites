@@ -27,28 +27,33 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" tag="100" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLR-2l-5oP"/>
-                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjS-Iu-bdE">
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="101" contentMode="left" text="Label" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjS-Iu-bdE">
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="100" id="0Yb-og-Qse"/>
-                                                <constraint firstAttribute="height" constant="110" id="ocs-gN-P4q"/>
+                                                <constraint firstAttribute="width" constant="100" id="oXt-3o-OGE"/>
+                                                <constraint firstAttribute="height" constant="100" id="rzN-Id-1tE"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleAspectFill" image="remove.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-ON-SLg"/>
+                                        <imageView userInteractionEnabled="NO" tag="102" contentMode="scaleAspectFill" image="remove.png" translatesAutoresizingMaskIntoConstraints="NO" id="gHr-ON-SLg">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="45" id="fso-f7-bYA"/>
+                                                <constraint firstAttribute="width" constant="29" id="h7k-VR-HDq"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="5XI-UR-1dO"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="8OM-Xx-lg2"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" constant="3" id="BOy-o0-iEe"/>
-                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="centerY" secondItem="BLR-2l-5oP" secondAttribute="centerY" type="default" id="JEm-IW-oLi"/>
-                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="centerX" secondItem="gHr-ON-SLg" secondAttribute="centerX" type="default" id="WNU-vD-9gJ"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="ise-Ge-HA9"/>
-                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="centerY" secondItem="fl9-y7-ncD" secondAttribute="centerY" type="default" id="jVf-c9-DpP"/>
-                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="q9R-5l-fVZ"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="trailing" secondItem="fl9-y7-ncD" secondAttribute="trailing" type="default" id="2Cm-Ly-ELm"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" constant="5" id="ASc-Cs-dHF"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" type="default" id="Ac8-ba-Tx9"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" type="default" id="LiP-9e-pAa"/>
+                                    <constraint firstItem="BLR-2l-5oP" firstAttribute="bottom" secondItem="fl9-y7-ncD" secondAttribute="bottom" type="default" id="MWZ-6n-jnk"/>
+                                    <constraint firstItem="QjS-Iu-bdE" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" constant="3" id="qlB-I5-aLX"/>
+                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="leading" secondItem="fl9-y7-ncD" secondAttribute="leading" constant="68" id="r9Q-lz-bVx"/>
+                                    <constraint firstItem="gHr-ON-SLg" firstAttribute="top" secondItem="fl9-y7-ncD" secondAttribute="top" constant="-4" id="vLO-PY-8TW"/>
                                 </constraints>
                             </collectionViewCell>
                         </cells>

@@ -197,9 +197,7 @@
             if ([Group sharedInstance].favorites) {
                 DLog(@"remove one ");
                 [[Group sharedInstance].favorites removeObjectAtIndex:indexPath.row];
-                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-                    [[Group sharedInstance] save];
-                });
+
                 [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
                 [self.collectionView reloadData];
                 if ([Group sharedInstance].favorites.count == 0 ) {
@@ -302,10 +300,11 @@
     }
 
     
-    [[Group sharedInstance].favorites addObject:newFriend];
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-        [[Group sharedInstance] save];
-    });
+    [[Group sharedInstance].favorites insertObject:newFriend atIndex:0];
+//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+//        [[Group sharedInstance] save];
+//    });
+    [self.collectionView insertItemsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:0 inSection:0]] ];
     [self.collectionView reloadData];
     
     DLog(@"name %@ phone %@", name, aPhone);
