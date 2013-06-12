@@ -109,7 +109,7 @@
 		184BDA2E17677408000FCFE4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		184BDA3017678275000FCFE4 /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
 		184BDA3117678277000FCFE4 /* remove@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remove@2x.png"; sourceTree = "<group>"; };
-		1898AE0B176576A800834C14 /* instacall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instacall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1898AE0B176576A800834C14 /* Favorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1898AE0E176576A800834C14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1898AE10176576A800834C14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1898AE12176576A800834C14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,7 +216,7 @@
 		1898AE0C176576A800834C14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1898AE0B176576A800834C14 /* instacall.app */,
+				1898AE0B176576A800834C14 /* Favorites.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -305,7 +305,7 @@
 			);
 			name = Favorites;
 			productName = TestCollectionView;
-			productReference = 1898AE0B176576A800834C14 /* instacall.app */;
+			productReference = 1898AE0B176576A800834C14 /* Favorites.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
