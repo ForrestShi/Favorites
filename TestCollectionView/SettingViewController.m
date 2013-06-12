@@ -208,6 +208,8 @@
 }
 
 - (void)moreApp{
+    
+    [Flurry logEvent:@"more apps"];
     MoreAppsViewController *mVC = [[MoreAppsViewController alloc] init];
     mVC.modalTransitionStyle = UIModalTransitionStylePartialCurl;
     [self presentViewController:mVC animated:YES completion:^{

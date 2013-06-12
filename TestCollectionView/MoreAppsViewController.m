@@ -154,6 +154,8 @@ static NSString *const iTellAFriendiOSAppStoreURLFormat2 = @"http://itunes.apple
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     MyApp *app = ((MyApp*)[self.apps objectAtIndex:indexPath.row]);
     DLog(@"click %d link %@  name %@", indexPath.row , app.appLink , app.appName);
+
+    [Flurry logEvent: [NSString stringWithFormat:@"open %@", app.appName]];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:app.appLink]];
 }
 

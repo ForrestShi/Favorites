@@ -36,6 +36,8 @@
         }];
     });
     
+    [Flurry startSession:@"4KGHY63F82PT7ZF785B3"];
+    
     return YES;
 }
 

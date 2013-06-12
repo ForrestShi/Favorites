@@ -109,7 +109,7 @@
 		184BDA2E17677408000FCFE4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		184BDA3017678275000FCFE4 /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
 		184BDA3117678277000FCFE4 /* remove@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remove@2x.png"; sourceTree = "<group>"; };
-		1898AE0B176576A800834C14 /* InstaCall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaCall.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1898AE0B176576A800834C14 /* instacall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instacall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1898AE0E176576A800834C14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1898AE10176576A800834C14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1898AE12176576A800834C14 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -216,7 +216,7 @@
 		1898AE0C176576A800834C14 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1898AE0B176576A800834C14 /* InstaCall.app */,
+				1898AE0B176576A800834C14 /* instacall.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -289,9 +289,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1898AE0A176576A800834C14 /* InstaCall */ = {
+		1898AE0A176576A800834C14 /* instacall */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "InstaCall" */;
+			buildConfigurationList = 1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "instacall" */;
 			buildPhases = (
 				BF69CDB2D8B84644BBDF3AB9 /* Check Pods Manifest.lock */,
 				1898AE07176576A800834C14 /* Sources */,
@@ -303,9 +303,9 @@
 			);
 			dependencies = (
 			);
-			name = InstaCall;
+			name = instacall;
 			productName = TestCollectionView;
-			productReference = 1898AE0B176576A800834C14 /* InstaCall.app */;
+			productReference = 1898AE0B176576A800834C14 /* instacall.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -330,7 +330,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1898AE0A176576A800834C14 /* InstaCall */,
+				1898AE0A176576A800834C14 /* instacall */,
 			);
 		};
 /* End PBXProject section */
@@ -522,6 +522,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DDD019BCBFD54E12982528A0 /* Pods.xcconfig */;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestCollectionView/InstaCall-Prefix.pch";
 				INFOPLIST_FILE = "TestCollectionView/InstaCall-Info.plist";
@@ -530,6 +532,8 @@
 					"\"$(SRCROOT)\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -546,7 +550,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "InstaCall" */ = {
+		1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "instacall" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1898AE2F176576A800834C14 /* Debug */,

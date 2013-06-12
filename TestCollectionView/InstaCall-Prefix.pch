@@ -21,7 +21,8 @@
 #import "UIFont+FlatUI.h"
 #import "NYXImagesKit.h"
 #import "PrettyKit.h"
-
+#import "Flurry.h"
+#import "iTellAFriend.h"
 
 #ifdef DEBUG
 #    define DLog(...) NSLog(__VA_ARGS__)

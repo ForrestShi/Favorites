@@ -164,6 +164,8 @@
 }
 
 - (void)addOneFavorite{
+    
+    [Flurry logEvent:@"Add"];
     ABAddressBookRef addressBook = ABAddressBookCreate();
     __block BOOL accessGranted = NO;
     if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6
@@ -196,6 +198,7 @@
         if (indexPath.row < [Group sharedInstance].favorites.count) {
             if ([Group sharedInstance].favorites) {
                 DLog(@"remove one ");
+                [Flurry logEvent:@"Delete"];
                 [[Group sharedInstance].favorites removeObjectAtIndex:indexPath.row];
 
                 [self.collectionView deleteItemsAtIndexPaths:@[indexPath]];
@@ -230,9 +233,13 @@
             }];
             
             if (phone) {
+                
+                [Flurry logEvent:@"Call"];
                 [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phone]];
             }else{
                 //TODO:
+                
+                [Flurry logEvent:@"Call None"];
                 DLog(@"no phone");
             }
         
