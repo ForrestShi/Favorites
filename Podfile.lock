@@ -7,7 +7,7 @@ PODS:
   - Colours (2.0)
   - Evernote-SDK-iOS (1.2.0):
     - SSKeychain (= 0.2.1)
-  - Facebook-iOS-SDK (3.5.1)
+  - Facebook-iOS-SDK (3.5.2)
   - FlatUIKit (1.1)
   - iTellAFriend (1.4.0)
   - JSONKit (1.5pre)
@@ -15,6 +15,7 @@ PODS:
   - libffi (3.0.13)
   - NYXImagesKit (2.2)
   - objectiveflickr (2.0.2)
+  - PrettyKit (0.2.0)
   - SBJson (3.2)
   - ShareKit (2.3):
     - ShareKit/Core
@@ -74,6 +75,7 @@ DEPENDENCIES:
   - iTellAFriend
   - KKPasscodeLock
   - NYXImagesKit
+  - PrettyKit
   - ShareKit
 
 SPEC CHECKSUMS:
@@ -83,7 +85,7 @@ SPEC CHECKSUMS:
   BlocksKit: 7396526b0816734103f6133fbb1a520c8b04e80c
   Colours: db86d21666586908dee6f27f54d04bd81a67984a
   Evernote-SDK-iOS: 5648d876c3deb4874b43854495426bb7e6288780
-  Facebook-iOS-SDK: 0dbd897e842cefeb012ec2eb8eba659ba6b96b12
+  Facebook-iOS-SDK: 0690c15914d4e412f5f0ef0f8cce34fd0d39f7ce
   FlatUIKit: 3b15b582ffcfa4e392bedc4d3c5461f9b11c1cc2
   iTellAFriend: b2d7098d9f28b8f2edaab8b754ff181a8da6dfd3
   JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
@@ -91,6 +93,7 @@ SPEC CHECKSUMS:
   libffi: d9cf374b6b464c3ea53b13219536fad3bfb06e84
   NYXImagesKit: 945719043b7b06078ce20322799dcd1776bc3cea
   objectiveflickr: 17f5f1fd4b9b9d6761a9545493c79221f65604c3
+  PrettyKit: 44b8f06f3719579880d2e11cd6498b7464b3b0fa
   SBJson: e60b4dc22448c2ae1e754b523a4ab53408e85c8d
   ShareKit: 4395f5b5529ba9d824968180519677f422eeb730
   SSKeychain: ffa1a79eb716d9ed1ca184fb0cf218087ca28486

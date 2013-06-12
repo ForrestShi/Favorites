@@ -20,6 +20,8 @@
 #import "UIBarButtonItem+FlatUI.h"
 #import "UIFont+FlatUI.h"
 #import "NYXImagesKit.h"
+#import "PrettyKit.h"
+
 
 #ifdef DEBUG
 #    define DLog(...) NSLog(__VA_ARGS__)

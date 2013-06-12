@@ -4,14 +4,10 @@
 <dict>
 	<key>6.camera+sepia</key>
 	<dict>
-		<key>info</key>
-		<string>Turn any photos into oil painting effects with your finger, share with your friends immediately with facebook,twitter,or email.
-
-This version is supported both for iPhone&amp;iPad from iOS 3.2. One time purchase for both devices. 
-
-This application is unique professional oil painting photo effects &amp; filters application. 
-We are focusing on professional image processing, with simple finger touch application to replace complicated operations using PhotoShop.
-Maximum ease and comfort in usage were our main goals when creating the user interface. Just enjoy experimenting with your photos and leave other concerns aside!</string>
+		<key>device</key>
+		<string>0</string>
+		<key>appId</key>
+		<string>578137731</string>
 		<key>icon</key>
 		<string>sepia_icon.png</string>
 		<key>link</key>
@@ -21,8 +17,10 @@ Maximum ease and comfort in usage were our main goals when creating the user int
 	</dict>
 	<key>paswords</key>
 	<dict>
-		<key>info</key>
-		<string></string>
+		<key>device</key>
+		<string>1</string>
+		<key>appId</key>
+		<string>654443419</string>
 		<key>icon</key>
 		<string>password.png</string>
 		<key>link</key>
@@ -30,10 +28,25 @@ Maximum ease and comfort in usage were our main goals when creating the user int
 		<key>name</key>
 		<string>Manage passwords</string>
 	</dict>
+	<key>timer</key>
+	<dict>
+		<key>device</key>
+		<string>1</string>
+		<key>appId</key>
+		<string>391369773</string>
+		<key>icon</key>
+		<string>timer.png</string>
+		<key>link</key>
+		<string>https://itunes.apple.com/app/passwords-pro/id654443419?l=en&amp;mt=8</string>
+		<key>name</key>
+		<string>Take photo with timer</string>
+	</dict>
 	<key>artcam</key>
 	<dict>
-		<key>info</key>
-		<string></string>
+		<key>device</key>
+		<string>0</string>
+		<key>appId</key>
+		<string>538737730</string>
 		<key>icon</key>
 		<string>artcam.png</string>
 		<key>link</key>
@@ -43,8 +56,10 @@ Maximum ease and comfort in usage were our main goals when creating the user int
 	</dict>
 	<key>big nose</key>
 	<dict>
-		<key>info</key>
-		<string></string>
+		<key>device</key>
+		<string>0</string>
+		<key>appId</key>
+		<string>583693496</string>
 		<key>icon</key>
 		<string>nose.png</string>
 		<key>link</key>
@@ -54,14 +69,29 @@ Maximum ease and comfort in usage were our main goals when creating the user int
 	</dict>
 	<key>toon</key>
 	<dict>
-		<key>info</key>
-		<string></string>
+		<key>device</key>
+		<string>0</string>
+		<key>appId</key>
+		<string>583614582</string>
 		<key>icon</key>
 		<string>toon.png</string>
 		<key>link</key>
 		<string>https://itunes.apple.com/app/camera-+-toon-pro/id583614582?l=en&amp;mt=8</string>
 		<key>name</key>
 		<string>The cool toon effect </string>
+	</dict>
+	<key>note </key>
+	<dict>
+		<key>device</key>
+		<string>2</string>
+		<key>appId</key>
+		<string>486030925</string>
+		<key>icon</key>
+		<string>note.png</string>
+		<key>link</key>
+		<string>https://itunes.apple.com/app/camera-+-toon-pro/id583614582?l=en&amp;mt=8</string>
+		<key>name</key>
+		<string>Quick note with finger</string>
 	</dict>
 </dict>
 </plist>

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181FE88F17681DE700528B67 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 181FE88E17681DE700528B67 /* note.png */; };
+		181FE8911768305700528B67 /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 181FE8901768305700528B67 /* timer.png */; };
 		184BD9D21766E44F000FCFE4 /* SchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9CD1766E44F000FCFE4 /* SchemeManager.m */; };
 		184BD9D31766E44F000FCFE4 /* SchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9CF1766E44F000FCFE4 /* SchemeViewController.m */; };
 		184BD9D41766E44F000FCFE4 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9D11766E44F000FCFE4 /* SettingViewController.m */; };
@@ -32,7 +34,6 @@
 		184BDA15176718EF000FCFE4 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA0C176718EF000FCFE4 /* Icon512.png */; };
 		184BDA16176718EF000FCFE4 /* Icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA0D176718EF000FCFE4 /* Icon1024.png */; };
 		184BDA1A17672AD5000FCFE4 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1917672AD5000FCFE4 /* SplashViewController.m */; };
-		184BDA1D17672CD7000FCFE4 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1C17672CD7000FCFE4 /* SplashView.m */; };
 		184BDA2017673A7A000FCFE4 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1F17673A79000FCFE4 /* People.m */; };
 		184BDA2317673EB3000FCFE4 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA2217673EB2000FCFE4 /* Group.m */; };
 		184BDA25176773E6000FCFE4 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA24176773E6000FCFE4 /* Accelerate.framework */; };
@@ -61,6 +62,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		181FE88E17681DE700528B67 /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+		181FE8901768305700528B67 /* timer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timer.png; sourceTree = "<group>"; };
 		184BD9CC1766E44F000FCFE4 /* SchemeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemeManager.h; sourceTree = "<group>"; };
 		184BD9CD1766E44F000FCFE4 /* SchemeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchemeManager.m; sourceTree = "<group>"; };
 		184BD9CE1766E44F000FCFE4 /* SchemeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchemeViewController.h; sourceTree = "<group>"; };
@@ -94,8 +97,6 @@
 		184BDA1717671A27000FCFE4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		184BDA1817672AD4000FCFE4 /* SplashViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		184BDA1917672AD5000FCFE4 /* SplashViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		184BDA1B17672CD6000FCFE4 /* SplashView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
-		184BDA1C17672CD7000FCFE4 /* SplashView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
 		184BDA1E17673A79000FCFE4 /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
 		184BDA1F17673A79000FCFE4 /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
 		184BDA2117673EB2000FCFE4 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Group.h; sourceTree = "<group>"; };
@@ -164,6 +165,7 @@
 				184BD9CF1766E44F000FCFE4 /* SchemeViewController.m */,
 				184BD9D01766E44F000FCFE4 /* SettingViewController.h */,
 				184BD9D11766E44F000FCFE4 /* SettingViewController.m */,
+				184BD9FA1766F11D000FCFE4 /* myapps */,
 				184BD9E51766F046000FCFE4 /* MoreAppsViewController.h */,
 				184BD9E61766F046000FCFE4 /* MoreAppsViewController.m */,
 			);
@@ -186,8 +188,10 @@
 		184BD9FA1766F11D000FCFE4 /* myapps */ = {
 			isa = PBXGroup;
 			children = (
-				184BD9FB1766F940000FCFE4 /* timercam.jpg */,
+				181FE8901768305700528B67 /* timer.png */,
 				184BD9E81766F0F2000FCFE4 /* myApps.plist */,
+				184BD9FB1766F940000FCFE4 /* timercam.jpg */,
+				181FE88E17681DE700528B67 /* note.png */,
 				184BD9FD1766FAD1000FCFE4 /* password.png */,
 				184BD9FF1766FB86000FCFE4 /* artcam.png */,
 				184BDA031766FCB9000FCFE4 /* nose.png */,
@@ -239,6 +243,7 @@
 		1898AE14176576A800834C14 /* TestCollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				1898AE1C176576A800834C14 /* InstaCall-Prefix.pch */,
 				1898AE1D176576A800834C14 /* AppDelegate.h */,
 				1898AE1E176576A800834C14 /* AppDelegate.m */,
 				1898AE26176576A800834C14 /* MainStoryboard.storyboard */,
@@ -260,13 +265,11 @@
 			children = (
 				184BDA3017678275000FCFE4 /* remove.png */,
 				184BDA3117678277000FCFE4 /* remove@2x.png */,
-				184BD9FA1766F11D000FCFE4 /* myapps */,
 				1898AE381765ADAB00834C14 /* delete.png */,
 				184BD9E01766EB7B000FCFE4 /* close.png */,
 				1898AE16176576A800834C14 /* InstaCall-Info.plist */,
 				1898AE17176576A800834C14 /* InfoPlist.strings */,
 				1898AE1A176576A800834C14 /* main.m */,
-				1898AE1C176576A800834C14 /* InstaCall-Prefix.pch */,
 				184BDA05176718ED000FCFE4 /* Icon-72.png */,
 				184BDA06176718ED000FCFE4 /* Icon-72@2x.png */,
 				184BDA07176718EE000FCFE4 /* Icon-Small-50.png */,
@@ -279,8 +282,6 @@
 				1898AE20176576A800834C14 /* Default.png */,
 				1898AE22176576A800834C14 /* Default@2x.png */,
 				1898AE24176576A800834C14 /* Default-568h@2x.png */,
-				184BDA1B17672CD6000FCFE4 /* SplashView.h */,
-				184BDA1C17672CD7000FCFE4 /* SplashView.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -365,6 +366,8 @@
 				184BDA16176718EF000FCFE4 /* Icon1024.png in Resources */,
 				184BDA3217678278000FCFE4 /* remove.png in Resources */,
 				184BDA3317678278000FCFE4 /* remove@2x.png in Resources */,
+				181FE88F17681DE700528B67 /* note.png in Resources */,
+				181FE8911768305700528B67 /* timer.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +418,6 @@
 				184BD9DC1766E481000FCFE4 /* QBFlatButton.m in Sources */,
 				184BD9E71766F046000FCFE4 /* MoreAppsViewController.m in Sources */,
 				184BDA1A17672AD5000FCFE4 /* SplashViewController.m in Sources */,
-				184BDA1D17672CD7000FCFE4 /* SplashView.m in Sources */,
 				184BDA2017673A7A000FCFE4 /* People.m in Sources */,
 				184BDA2317673EB3000FCFE4 /* Group.m in Sources */,
 			);
