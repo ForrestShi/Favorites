@@ -17,7 +17,7 @@
 #import "Group.h"
 
 
-@interface MyFavoriteViewController ()<UICollectionViewDataSource, UICollectionViewDelegate ,ABPeoplePickerNavigationControllerDelegate , UIGestureRecognizerDelegate>
+@interface MyFavoriteViewController ()<UICollectionViewDataSource, UICollectionViewDelegate ,ABPeoplePickerNavigationControllerDelegate , UIGestureRecognizerDelegate ,FUIAlertViewDelegate>
 
 @property (nonatomic,assign) BOOL editing;
 @end
@@ -33,6 +33,12 @@
         // Custom initialization
     }
     return self;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    [[LARSAdController sharedManager] addAdContainerToViewInViewController:self];
 }
 
 - (void)viewDidLoad
@@ -163,9 +169,25 @@
     [self.collectionView reloadData];
 }
 
+- (void)alertView:(FUIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+
+    if (buttonIndex == 0 ) {
+        [Flurry logEvent:@"buy"];
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"http://itunes.apple.com/app/id%@?mt=8&ls=1",@"661012216"]]];
+    }
+}
+
 - (void)addOneFavorite{
-    
     [Flurry logEvent:@"Add"];
+#if LITE
+    if ([Group sharedInstance].favorites.count > 5 ) {
+        
+        FUIAlertView *alert = [[FUIAlertView alloc] initWithTitle:@"Hi" message:@"This is a free version !" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Buy", nil];
+        [alert show];
+        [Flurry logEvent:@"show lite msg"];
+        return;
+    }
+#endif
     ABAddressBookRef addressBook = ABAddressBookCreate();
     __block BOOL accessGranted = NO;
     if (ABAddressBookRequestAccessWithCompletion != NULL) { // we're on iOS 6

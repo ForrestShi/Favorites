@@ -36,7 +36,14 @@
         }];
     });
     
+    
+#if LITE
+    [[LARSAdController sharedManager] registerAdClass:[TOLAdAdapteriAds class]];
+    DLog(@"Lite version");
+    [Flurry startSession:@"485Y4SKK7ZD533QBX3JX"];
+#else
     [Flurry startSession:@"4KGHY63F82PT7ZF785B3"];
+#endif
     
     return YES;
 }
@@ -63,6 +70,12 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    [Flurry logEvent:@"start to use"];
+    CFStringRef ver = CFBundleGetValueForInfoDictionaryKey(
+                                                           CFBundleGetMainBundle(),
+                                                           kCFBundleVersionKey);
+    NSString *appVersion = (__bridge NSString *)ver;
+    [Flurry setAppVersion:[NSString stringWithFormat:@"%@ %@",[iTellAFriend sharedInstance].applicationName ,appVersion]];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

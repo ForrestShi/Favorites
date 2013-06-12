@@ -42,6 +42,18 @@
 #define COCOAPODS_VERSION_MINOR_FlatUIKit 1
 #define COCOAPODS_VERSION_PATCH_FlatUIKit 0
 
+// LARSAdController/Core
+#define COCOAPODS_POD_AVAILABLE_LARSAdController_Core
+#define COCOAPODS_VERSION_MAJOR_LARSAdController_Core 3
+#define COCOAPODS_VERSION_MINOR_LARSAdController_Core 0
+#define COCOAPODS_VERSION_PATCH_LARSAdController_Core 2
+
+// LARSAdController/iAds
+#define COCOAPODS_POD_AVAILABLE_LARSAdController_iAds
+#define COCOAPODS_VERSION_MAJOR_LARSAdController_iAds 3
+#define COCOAPODS_VERSION_MINOR_LARSAdController_iAds 0
+#define COCOAPODS_VERSION_PATCH_LARSAdController_iAds 2
+
 // NYXImagesKit
 #define COCOAPODS_POD_AVAILABLE_NYXImagesKit
 #define COCOAPODS_VERSION_MAJOR_NYXImagesKit 2

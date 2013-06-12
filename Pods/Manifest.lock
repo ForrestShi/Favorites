@@ -7,6 +7,9 @@ PODS:
   - Colours (2.0)
   - FlatUIKit (1.1)
   - iTellAFriend (1.4.0)
+  - LARSAdController/Core (3.0.2)
+  - LARSAdController/iAds (3.0.2):
+    - LARSAdController/Core
   - libffi (3.0.13)
   - NYXImagesKit (2.2)
   - PrettyKit (0.2.0)
@@ -19,6 +22,7 @@ DEPENDENCIES:
   - Colours (~> 2.0)
   - FlatUIKit
   - iTellAFriend
+  - LARSAdController/iAds
   - NYXImagesKit
   - PrettyKit
 
@@ -30,6 +34,7 @@ SPEC CHECKSUMS:
   Colours: db86d21666586908dee6f27f54d04bd81a67984a
   FlatUIKit: 3b15b582ffcfa4e392bedc4d3c5461f9b11c1cc2
   iTellAFriend: b2d7098d9f28b8f2edaab8b754ff181a8da6dfd3
+  LARSAdController: e1315b73aa332b94a0fd21788fcdd630e7242a23
   libffi: d9cf374b6b464c3ea53b13219536fad3bfb06e84
   NYXImagesKit: 945719043b7b06078ce20322799dcd1776bc3cea
   PrettyKit: 44b8f06f3719579880d2e11cd6498b7464b3b0fa

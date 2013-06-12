@@ -8,3 +8,4 @@ pod "BaseModel"
 pod "AutoCoding"
 pod "NYXImagesKit"
 pod "PrettyKit"
+pod 'LARSAdController/iAds'

@@ -58,6 +58,60 @@
 		1898AE3517658CED00834C14 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE3417658CED00834C14 /* AddressBookUI.framework */; };
 		1898AE3717658CF500834C14 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE3617658CF500834C14 /* AddressBook.framework */; };
 		1898AE391765ADAB00834C14 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE381765ADAB00834C14 /* delete.png */; };
+		18F9775517684E4400E51DF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898AE1A176576A800834C14 /* main.m */; };
+		18F9775617684E4400E51DF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898AE1E176576A800834C14 /* AppDelegate.m */; };
+		18F9775717684E4400E51DF5 /* MyFavoriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1898AE32176577CE00834C14 /* MyFavoriteViewController.m */; };
+		18F9775817684E4400E51DF5 /* SchemeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9CD1766E44F000FCFE4 /* SchemeManager.m */; };
+		18F9775917684E4400E51DF5 /* SchemeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9CF1766E44F000FCFE4 /* SchemeViewController.m */; };
+		18F9775A17684E4400E51DF5 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9D11766E44F000FCFE4 /* SettingViewController.m */; };
+		18F9775B17684E4400E51DF5 /* QBFlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9D71766E480000FCFE4 /* QBFlatButton.m */; };
+		18F9775C17684E4400E51DF5 /* MoreAppsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BD9E61766F046000FCFE4 /* MoreAppsViewController.m */; };
+		18F9775D17684E4400E51DF5 /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1917672AD5000FCFE4 /* SplashViewController.m */; };
+		18F9775E17684E4400E51DF5 /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA1F17673A79000FCFE4 /* People.m */; };
+		18F9775F17684E4400E51DF5 /* Group.m in Sources */ = {isa = PBXBuildFile; fileRef = 184BDA2217673EB2000FCFE4 /* Group.m */; };
+		18F9776117684E4400E51DF5 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA2E17677408000FCFE4 /* CoreImage.framework */; };
+		18F9776217684E4400E51DF5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA2C17677403000FCFE4 /* QuartzCore.framework */; };
+		18F9776317684E4400E51DF5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA2A176773FD000FCFE4 /* MobileCoreServices.framework */; };
+		18F9776417684E4400E51DF5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA28176773F4000FCFE4 /* ImageIO.framework */; };
+		18F9776517684E4400E51DF5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA26176773EB000FCFE4 /* AssetsLibrary.framework */; };
+		18F9776617684E4400E51DF5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA24176773E6000FCFE4 /* Accelerate.framework */; };
+		18F9776717684E4400E51DF5 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE3617658CF500834C14 /* AddressBook.framework */; };
+		18F9776817684E4400E51DF5 /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE3417658CED00834C14 /* AddressBookUI.framework */; };
+		18F9776917684E4400E51DF5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE0E176576A800834C14 /* UIKit.framework */; };
+		18F9776A17684E4400E51DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE10176576A800834C14 /* Foundation.framework */; };
+		18F9776B17684E4400E51DF5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE12176576A800834C14 /* CoreGraphics.framework */; };
+		18F9776C17684E4400E51DF5 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DA812BD6074D8D835CD20E /* libPods.a */; };
+		18F9776D17684E4400E51DF5 /* libFlurry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BD9D91766E480000FCFE4 /* libFlurry.a */; };
+		18F9776F17684E4400E51DF5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE17176576A800834C14 /* InfoPlist.strings */; };
+		18F9777017684E4400E51DF5 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE20176576A800834C14 /* Default.png */; };
+		18F9777117684E4400E51DF5 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE22176576A800834C14 /* Default@2x.png */; };
+		18F9777217684E4400E51DF5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE24176576A800834C14 /* Default-568h@2x.png */; };
+		18F9777317684E4400E51DF5 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE26176576A800834C14 /* MainStoryboard.storyboard */; };
+		18F9777417684E4400E51DF5 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1898AE381765ADAB00834C14 /* delete.png */; };
+		18F9777517684E4400E51DF5 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9E01766EB7B000FCFE4 /* close.png */; };
+		18F9777617684E4400E51DF5 /* myApps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9E81766F0F2000FCFE4 /* myApps.plist */; };
+		18F9777717684E4400E51DF5 /* sepia_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9F01766F115000FCFE4 /* sepia_icon.png */; };
+		18F9777817684E4400E51DF5 /* stickies.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9F11766F115000FCFE4 /* stickies.png */; };
+		18F9777917684E4400E51DF5 /* timercam.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9FB1766F940000FCFE4 /* timercam.jpg */; };
+		18F9777A17684E4400E51DF5 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9FD1766FAD1000FCFE4 /* password.png */; };
+		18F9777B17684E4400E51DF5 /* artcam.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BD9FF1766FB86000FCFE4 /* artcam.png */; };
+		18F9777C17684E4400E51DF5 /* toon.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA011766FC7C000FCFE4 /* toon.png */; };
+		18F9777D17684E4400E51DF5 /* nose.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA031766FCB9000FCFE4 /* nose.png */; };
+		18F9777E17684E4400E51DF5 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA05176718ED000FCFE4 /* Icon-72.png */; };
+		18F9777F17684E4400E51DF5 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA06176718ED000FCFE4 /* Icon-72@2x.png */; };
+		18F9778017684E4400E51DF5 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA07176718EE000FCFE4 /* Icon-Small-50.png */; };
+		18F9778117684E4400E51DF5 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA08176718EE000FCFE4 /* Icon-Small.png */; };
+		18F9778217684E4400E51DF5 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA09176718EE000FCFE4 /* Icon-Small@2x.png */; };
+		18F9778317684E4400E51DF5 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA0A176718EE000FCFE4 /* Icon@2x.png */; };
+		18F9778417684E4400E51DF5 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA0B176718EF000FCFE4 /* Icon.png */; };
+		18F9778517684E4400E51DF5 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA0C176718EF000FCFE4 /* Icon512.png */; };
+		18F9778617684E4400E51DF5 /* Icon1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA0D176718EF000FCFE4 /* Icon1024.png */; };
+		18F9778717684E4400E51DF5 /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA3017678275000FCFE4 /* remove.png */; };
+		18F9778817684E4400E51DF5 /* remove@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA3117678277000FCFE4 /* remove@2x.png */; };
+		18F9778917684E4400E51DF5 /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = 181FE88E17681DE700528B67 /* note.png */; };
+		18F9778A17684E4400E51DF5 /* timer.png in Resources */ = {isa = PBXBuildFile; fileRef = 181FE8901768305700528B67 /* timer.png */; };
+		18F9779217684F6E00E51DF5 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F9779117684F6E00E51DF5 /* iAd.framework */; };
+		18F9779417684F7400E51DF5 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18F9779317684F7400E51DF5 /* AdSupport.framework */; };
 		38428C9126A34E3593D1F616 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DA812BD6074D8D835CD20E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -128,6 +182,10 @@
 		1898AE3417658CED00834C14 /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		1898AE3617658CF500834C14 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		1898AE381765ADAB00834C14 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
+		18F9778F17684E4400E51DF5 /* Favorites copy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Favorites copy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F9779017684E4500E51DF5 /* Favorites copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Favorites copy-Info.plist"; path = "/Users/apple/workspace/2013Prototype/InstaCall/Favorites copy-Info.plist"; sourceTree = "<absolute>"; };
+		18F9779117684F6E00E51DF5 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		18F9779317684F7400E51DF5 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		93DA812BD6074D8D835CD20E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDD019BCBFD54E12982528A0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
@@ -150,6 +208,28 @@
 				1898AE13176576A800834C14 /* CoreGraphics.framework in Frameworks */,
 				38428C9126A34E3593D1F616 /* libPods.a in Frameworks */,
 				184BD9DD1766E481000FCFE4 /* libFlurry.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F9776017684E4400E51DF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F9779417684F7400E51DF5 /* AdSupport.framework in Frameworks */,
+				18F9779217684F6E00E51DF5 /* iAd.framework in Frameworks */,
+				18F9776117684E4400E51DF5 /* CoreImage.framework in Frameworks */,
+				18F9776217684E4400E51DF5 /* QuartzCore.framework in Frameworks */,
+				18F9776317684E4400E51DF5 /* MobileCoreServices.framework in Frameworks */,
+				18F9776417684E4400E51DF5 /* ImageIO.framework in Frameworks */,
+				18F9776517684E4400E51DF5 /* AssetsLibrary.framework in Frameworks */,
+				18F9776617684E4400E51DF5 /* Accelerate.framework in Frameworks */,
+				18F9776717684E4400E51DF5 /* AddressBook.framework in Frameworks */,
+				18F9776817684E4400E51DF5 /* AddressBookUI.framework in Frameworks */,
+				18F9776917684E4400E51DF5 /* UIKit.framework in Frameworks */,
+				18F9776A17684E4400E51DF5 /* Foundation.framework in Frameworks */,
+				18F9776B17684E4400E51DF5 /* CoreGraphics.framework in Frameworks */,
+				18F9776C17684E4400E51DF5 /* libPods.a in Frameworks */,
+				18F9776D17684E4400E51DF5 /* libFlurry.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +290,7 @@
 				1898AE0D176576A800834C14 /* Frameworks */,
 				1898AE0C176576A800834C14 /* Products */,
 				DDD019BCBFD54E12982528A0 /* Pods.xcconfig */,
+				18F9779017684E4500E51DF5 /* Favorites copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,6 +298,7 @@
 			isa = PBXGroup;
 			children = (
 				1898AE0B176576A800834C14 /* Favorites.app */,
+				18F9778F17684E4400E51DF5 /* Favorites copy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -224,6 +306,8 @@
 		1898AE0D176576A800834C14 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				18F9779317684F7400E51DF5 /* AdSupport.framework */,
+				18F9779117684F6E00E51DF5 /* iAd.framework */,
 				184BDA2E17677408000FCFE4 /* CoreImage.framework */,
 				184BDA2C17677403000FCFE4 /* QuartzCore.framework */,
 				184BDA2A176773FD000FCFE4 /* MobileCoreServices.framework */,
@@ -308,6 +392,25 @@
 			productReference = 1898AE0B176576A800834C14 /* Favorites.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18F9775217684E4400E51DF5 /* Favorites Lite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F9778C17684E4400E51DF5 /* Build configuration list for PBXNativeTarget "Favorites Lite" */;
+			buildPhases = (
+				18F9775317684E4400E51DF5 /* Check Pods Manifest.lock */,
+				18F9775417684E4400E51DF5 /* Sources */,
+				18F9776017684E4400E51DF5 /* Frameworks */,
+				18F9776E17684E4400E51DF5 /* Resources */,
+				18F9778B17684E4400E51DF5 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Favorites Lite";
+			productName = TestCollectionView;
+			productReference = 18F9778F17684E4400E51DF5 /* Favorites copy.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -331,6 +434,7 @@
 			projectRoot = "";
 			targets = (
 				1898AE0A176576A800834C14 /* Favorites */,
+				18F9775217684E4400E51DF5 /* Favorites Lite */,
 			);
 		};
 /* End PBXProject section */
@@ -371,9 +475,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18F9776E17684E4400E51DF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F9776F17684E4400E51DF5 /* InfoPlist.strings in Resources */,
+				18F9777017684E4400E51DF5 /* Default.png in Resources */,
+				18F9777117684E4400E51DF5 /* Default@2x.png in Resources */,
+				18F9777217684E4400E51DF5 /* Default-568h@2x.png in Resources */,
+				18F9777317684E4400E51DF5 /* MainStoryboard.storyboard in Resources */,
+				18F9777417684E4400E51DF5 /* delete.png in Resources */,
+				18F9777517684E4400E51DF5 /* close.png in Resources */,
+				18F9777617684E4400E51DF5 /* myApps.plist in Resources */,
+				18F9777717684E4400E51DF5 /* sepia_icon.png in Resources */,
+				18F9777817684E4400E51DF5 /* stickies.png in Resources */,
+				18F9777917684E4400E51DF5 /* timercam.jpg in Resources */,
+				18F9777A17684E4400E51DF5 /* password.png in Resources */,
+				18F9777B17684E4400E51DF5 /* artcam.png in Resources */,
+				18F9777C17684E4400E51DF5 /* toon.png in Resources */,
+				18F9777D17684E4400E51DF5 /* nose.png in Resources */,
+				18F9777E17684E4400E51DF5 /* Icon-72.png in Resources */,
+				18F9777F17684E4400E51DF5 /* Icon-72@2x.png in Resources */,
+				18F9778017684E4400E51DF5 /* Icon-Small-50.png in Resources */,
+				18F9778117684E4400E51DF5 /* Icon-Small.png in Resources */,
+				18F9778217684E4400E51DF5 /* Icon-Small@2x.png in Resources */,
+				18F9778317684E4400E51DF5 /* Icon@2x.png in Resources */,
+				18F9778417684E4400E51DF5 /* Icon.png in Resources */,
+				18F9778517684E4400E51DF5 /* Icon512.png in Resources */,
+				18F9778617684E4400E51DF5 /* Icon1024.png in Resources */,
+				18F9778717684E4400E51DF5 /* remove.png in Resources */,
+				18F9778817684E4400E51DF5 /* remove@2x.png in Resources */,
+				18F9778917684E4400E51DF5 /* note.png in Resources */,
+				18F9778A17684E4400E51DF5 /* timer.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		18F9775317684E4400E51DF5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		18F9778B17684E4400E51DF5 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
 		BF69CDB2D8B84644BBDF3AB9 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,6 +587,24 @@
 				184BDA1A17672AD5000FCFE4 /* SplashViewController.m in Sources */,
 				184BDA2017673A7A000FCFE4 /* People.m in Sources */,
 				184BDA2317673EB3000FCFE4 /* Group.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F9775417684E4400E51DF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F9775517684E4400E51DF5 /* main.m in Sources */,
+				18F9775617684E4400E51DF5 /* AppDelegate.m in Sources */,
+				18F9775717684E4400E51DF5 /* MyFavoriteViewController.m in Sources */,
+				18F9775817684E4400E51DF5 /* SchemeManager.m in Sources */,
+				18F9775917684E4400E51DF5 /* SchemeViewController.m in Sources */,
+				18F9775A17684E4400E51DF5 /* SettingViewController.m in Sources */,
+				18F9775B17684E4400E51DF5 /* QBFlatButton.m in Sources */,
+				18F9775C17684E4400E51DF5 /* MoreAppsViewController.m in Sources */,
+				18F9775D17684E4400E51DF5 /* SplashViewController.m in Sources */,
+				18F9775E17684E4400E51DF5 /* People.m in Sources */,
+				18F9775F17684E4400E51DF5 /* Group.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -540,6 +725,46 @@
 			};
 			name = Release;
 		};
+		18F9778D17684E4400E51DF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD019BCBFD54E12982528A0 /* Pods.xcconfig */;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestCollectionView/InstaCall-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = LITE;
+				INFOPLIST_FILE = "Favorites copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "Favorites copy";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18F9778E17684E4400E51DF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDD019BCBFD54E12982528A0 /* Pods.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TestCollectionView/InstaCall-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = LITE;
+				INFOPLIST_FILE = "Favorites copy-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = "Favorites copy";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -557,6 +782,15 @@
 			buildConfigurations = (
 				1898AE2F176576A800834C14 /* Debug */,
 				1898AE30176576A800834C14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F9778C17684E4400E51DF5 /* Build configuration list for PBXNativeTarget "Favorites Lite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F9778D17684E4400E51DF5 /* Debug */,
+				18F9778E17684E4400E51DF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
