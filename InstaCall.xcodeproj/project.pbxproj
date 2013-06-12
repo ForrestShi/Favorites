@@ -289,9 +289,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1898AE0A176576A800834C14 /* instacall */ = {
+		1898AE0A176576A800834C14 /* Favorites */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "instacall" */;
+			buildConfigurationList = 1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "Favorites" */;
 			buildPhases = (
 				BF69CDB2D8B84644BBDF3AB9 /* Check Pods Manifest.lock */,
 				1898AE07176576A800834C14 /* Sources */,
@@ -303,7 +303,7 @@
 			);
 			dependencies = (
 			);
-			name = instacall;
+			name = Favorites;
 			productName = TestCollectionView;
 			productReference = 1898AE0B176576A800834C14 /* instacall.app */;
 			productType = "com.apple.product-type.application";
@@ -330,7 +330,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1898AE0A176576A800834C14 /* instacall */,
+				1898AE0A176576A800834C14 /* Favorites */,
 			);
 		};
 /* End PBXProject section */
@@ -509,6 +509,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestCollectionView/InstaCall-Prefix.pch";
 				INFOPLIST_FILE = "TestCollectionView/InstaCall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -527,6 +528,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TestCollectionView/InstaCall-Prefix.pch";
 				INFOPLIST_FILE = "TestCollectionView/InstaCall-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
@@ -550,7 +552,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "instacall" */ = {
+		1898AE2E176576A800834C14 /* Build configuration list for PBXNativeTarget "Favorites" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1898AE2F176576A800834C14 /* Debug */,

@@ -5,65 +5,11 @@ PODS:
   - BlocksKit (1.8.2):
     - libffi
   - Colours (2.0)
-  - Evernote-SDK-iOS (1.2.0):
-    - SSKeychain (= 0.2.1)
-  - Facebook-iOS-SDK (3.5.2)
   - FlatUIKit (1.1)
   - iTellAFriend (1.4.0)
-  - JSONKit (1.5pre)
-  - KKPasscodeLock (0.1.5)
   - libffi (3.0.13)
   - NYXImagesKit (2.2)
-  - objectiveflickr (2.0.2)
   - PrettyKit (0.2.0)
-  - SBJson (3.2)
-  - ShareKit (2.3):
-    - ShareKit/Core
-    - ShareKit/Evernote
-    - ShareKit/Facebook
-    - ShareKit/Flickr
-    - ShareKit/Foursquare
-    - ShareKit/GoogleReader
-    - ShareKit/Instapaper
-    - ShareKit/LinkedIn
-    - ShareKit/Pinboard
-    - ShareKit/ReadItLater
-    - ShareKit/Tumblr
-    - ShareKit/Twitter
-    - ShareKit/Vkontakte
-  - ShareKit/Core (2.3):
-    - SSKeychain (= 0.2.1)
-  - ShareKit/Evernote (2.3):
-    - Evernote-SDK-iOS (~> 1.2)
-    - ShareKit/Core
-  - ShareKit/Facebook (2.3):
-    - Facebook-iOS-SDK (~> 3.5)
-    - ShareKit/Core
-  - ShareKit/Flickr (2.3):
-    - objectiveflickr (~> 2.0)
-    - ShareKit/Core
-  - ShareKit/Foursquare (2.3):
-    - SBJson (~> 3.2)
-    - ShareKit/Core
-  - ShareKit/GoogleReader (2.3):
-    - ShareKit/Core
-  - ShareKit/Instapaper (2.3):
-    - ShareKit/Core
-  - ShareKit/LinkedIn (2.3):
-    - ShareKit/Core
-  - ShareKit/Pinboard (2.3):
-    - ShareKit/Core
-  - ShareKit/ReadItLater (2.3):
-    - ShareKit/Core
-  - ShareKit/Tumblr (2.3):
-    - ShareKit/Core
-  - ShareKit/Twitter (2.3):
-    - JSONKit (~> 1.4)
-    - ShareKit/Core
-  - ShareKit/Vkontakte (2.3):
-    - JSONKit (~> 1.4)
-    - ShareKit/Core
-  - SSKeychain (0.2.1)
 
 DEPENDENCIES:
   - Appirater
@@ -73,10 +19,8 @@ DEPENDENCIES:
   - Colours (~> 2.0)
   - FlatUIKit
   - iTellAFriend
-  - KKPasscodeLock
   - NYXImagesKit
   - PrettyKit
-  - ShareKit
 
 SPEC CHECKSUMS:
   Appirater: 1c146af7b0ef3e2114a17db2e185f94367f63a99
@@ -84,18 +28,10 @@ SPEC CHECKSUMS:
   BaseModel: 1c3251af9526bacba236298543f76d1c2a11b569
   BlocksKit: 7396526b0816734103f6133fbb1a520c8b04e80c
   Colours: db86d21666586908dee6f27f54d04bd81a67984a
-  Evernote-SDK-iOS: 5648d876c3deb4874b43854495426bb7e6288780
-  Facebook-iOS-SDK: 0690c15914d4e412f5f0ef0f8cce34fd0d39f7ce
   FlatUIKit: 3b15b582ffcfa4e392bedc4d3c5461f9b11c1cc2
   iTellAFriend: b2d7098d9f28b8f2edaab8b754ff181a8da6dfd3
-  JSONKit: 409734ab3407fce90ef7eaa95d7168f38d9a6601
-  KKPasscodeLock: 5fb69da49d4163215e0405a482e152bec671586d
   libffi: d9cf374b6b464c3ea53b13219536fad3bfb06e84
   NYXImagesKit: 945719043b7b06078ce20322799dcd1776bc3cea
-  objectiveflickr: 17f5f1fd4b9b9d6761a9545493c79221f65604c3
   PrettyKit: 44b8f06f3719579880d2e11cd6498b7464b3b0fa
-  SBJson: e60b4dc22448c2ae1e754b523a4ab53408e85c8d
-  ShareKit: 4395f5b5529ba9d824968180519677f422eeb730
-  SSKeychain: ffa1a79eb716d9ed1ca184fb0cf218087ca28486
 
 COCOAPODS: 0.19.1
