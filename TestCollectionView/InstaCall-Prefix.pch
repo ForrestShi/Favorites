@@ -27,6 +27,7 @@
 #import "iTellAFriend.h"
 #import "LARSAdController.h"
 #import "TOLAdAdapteriAds.h"
+#import "BlocksKit.h"
 
 #ifdef DEBUG
 #    define DLog(...) NSLog(__VA_ARGS__)

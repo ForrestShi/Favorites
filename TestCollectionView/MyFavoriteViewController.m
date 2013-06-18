@@ -15,7 +15,7 @@
 #import "BaseModel.h"
 #import "People.h"
 #import "Group.h"
-
+#import "PeopleViewController.h"
 
 @interface MyFavoriteViewController ()<UICollectionViewDataSource, UICollectionViewDelegate ,ABPeoplePickerNavigationControllerDelegate , UIGestureRecognizerDelegate ,FUIAlertViewDelegate>
 
@@ -257,7 +257,16 @@
             if (phone) {
                 
                 [Flurry logEvent:@"Call"];
-                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:phone]];
+                //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:phone]];
+                
+                PeopleViewController *pvc = [[PeopleViewController alloc] init];
+                pvc.person = [[Group sharedInstance].favorites objectAtIndex:indexPath.row];
+                
+                pvc.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+                [self presentViewController:pvc animated:YES completion:^{
+                    
+                }];
+                
             }else{
                 //TODO:
                 

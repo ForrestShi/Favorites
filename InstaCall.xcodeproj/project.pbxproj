@@ -44,6 +44,8 @@
 		184BDA2F17677408000FCFE4 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 184BDA2E17677408000FCFE4 /* CoreImage.framework */; };
 		184BDA3217678278000FCFE4 /* remove.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA3017678275000FCFE4 /* remove.png */; };
 		184BDA3317678278000FCFE4 /* remove@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 184BDA3117678277000FCFE4 /* remove@2x.png */; };
+		1894D75F1769E2AC0052E86C /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894D75E1769E2AC0052E86C /* PeopleViewController.m */; };
+		1894D7601769E2AC0052E86C /* PeopleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1894D75E1769E2AC0052E86C /* PeopleViewController.m */; };
 		1898AE0F176576A800834C14 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE0E176576A800834C14 /* UIKit.framework */; };
 		1898AE11176576A800834C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE10176576A800834C14 /* Foundation.framework */; };
 		1898AE13176576A800834C14 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1898AE12176576A800834C14 /* CoreGraphics.framework */; };
@@ -163,6 +165,8 @@
 		184BDA2E17677408000FCFE4 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
 		184BDA3017678275000FCFE4 /* remove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = remove.png; sourceTree = "<group>"; };
 		184BDA3117678277000FCFE4 /* remove@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "remove@2x.png"; sourceTree = "<group>"; };
+		1894D75D1769E2AC0052E86C /* PeopleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeopleViewController.h; sourceTree = "<group>"; };
+		1894D75E1769E2AC0052E86C /* PeopleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleViewController.m; sourceTree = "<group>"; };
 		1898AE0B176576A800834C14 /* Favorites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Favorites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1898AE0E176576A800834C14 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1898AE10176576A800834C14 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -282,6 +286,30 @@
 			name = myapps;
 			sourceTree = "<group>";
 		};
+		1894D75B1769E1D30052E86C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				184BDA2117673EB2000FCFE4 /* Group.h */,
+				184BDA2217673EB2000FCFE4 /* Group.m */,
+				184BDA1E17673A79000FCFE4 /* People.h */,
+				184BDA1F17673A79000FCFE4 /* People.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1894D75C1769E1E00052E86C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1898AE31176577CE00834C14 /* MyFavoriteViewController.h */,
+				1898AE32176577CE00834C14 /* MyFavoriteViewController.m */,
+				184BDA1817672AD4000FCFE4 /* SplashViewController.h */,
+				184BDA1917672AD5000FCFE4 /* SplashViewController.m */,
+				1894D75D1769E2AC0052E86C /* PeopleViewController.h */,
+				1894D75E1769E2AC0052E86C /* PeopleViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		1898AE02176576A800834C14 = {
 			isa = PBXGroup;
 			children = (
@@ -331,15 +359,9 @@
 				1898AE1D176576A800834C14 /* AppDelegate.h */,
 				1898AE1E176576A800834C14 /* AppDelegate.m */,
 				1898AE26176576A800834C14 /* MainStoryboard.storyboard */,
+				1894D75C1769E1E00052E86C /* ViewControllers */,
+				1894D75B1769E1D30052E86C /* Model */,
 				1898AE15176576A800834C14 /* Supporting Files */,
-				1898AE31176577CE00834C14 /* MyFavoriteViewController.h */,
-				1898AE32176577CE00834C14 /* MyFavoriteViewController.m */,
-				184BDA1817672AD4000FCFE4 /* SplashViewController.h */,
-				184BDA1917672AD5000FCFE4 /* SplashViewController.m */,
-				184BDA2117673EB2000FCFE4 /* Group.h */,
-				184BDA2217673EB2000FCFE4 /* Group.m */,
-				184BDA1E17673A79000FCFE4 /* People.h */,
-				184BDA1F17673A79000FCFE4 /* People.m */,
 			);
 			path = TestCollectionView;
 			sourceTree = "<group>";
@@ -587,6 +609,7 @@
 				184BDA1A17672AD5000FCFE4 /* SplashViewController.m in Sources */,
 				184BDA2017673A7A000FCFE4 /* People.m in Sources */,
 				184BDA2317673EB3000FCFE4 /* Group.m in Sources */,
+				1894D75F1769E2AC0052E86C /* PeopleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,6 +628,7 @@
 				18F9775D17684E4400E51DF5 /* SplashViewController.m in Sources */,
 				18F9775E17684E4400E51DF5 /* People.m in Sources */,
 				18F9775F17684E4400E51DF5 /* Group.m in Sources */,
+				1894D7601769E2AC0052E86C /* PeopleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
